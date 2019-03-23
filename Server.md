@@ -38,7 +38,7 @@ Response:
 ```json
 {
   "access_token": "ACCESS TOKEN",
-  "refresh_token": "REFRESH TOKEN", // Omit if unchange
+  "refresh_token": "REFRESH TOKEN, Omit if unchange",
   "token_type": "Bearer",
   "expires_in": 3600
 }
@@ -61,7 +61,7 @@ Response:
 {
   "track_id": "Track ID",
   "file_id": "Spotify's file id for the track",
-  "track_key": "Encrypted track key"
+  "track_key": "Encrypted track key in Base64 encoded format"
 }
 ```
 
@@ -84,7 +84,7 @@ Response:
     {
       "track_id": "Track ID",
       "file_id": "Spotify's file id for the track",
-      "track_key": "Encrypted track key"
+      "track_key": "Encrypted track key in Base64 encoded format"
     }
   ]
 }
@@ -111,4 +111,4 @@ Response:
 ## Poor Man’s DRM
 To honor Spotify’s digital rights to the content, and avoid exposing a web service that returns the track AES key directly, Apollo implemented a key wrapping system utilizing Apple Watch’s Secure Enclave. Apollo generates an elliptic curve (P-256) key pair with Secure Enclave on Apple Watch, and expects all track key returned by the web service to encrypt the track key using the public key sent along with the request.
 
-Apollo expects the track key to be encrypted in a way that’s compliant to  `kSecKeyAlgorithmECIESEncryptionCofactorVariableIVX963SHA256AESGCM`. For more information about server side encryption for Apple’s Security API, please refer to [Encrypting for Apple’s Secure Enclave | Darth Null](https://darthnull.org/security/2018/05/31/secure-enclave-ecies/).
+Apollo expects the track key to be encrypted in a way that’s compliant to  `kSecKeyAlgorithmECIESEncryptionCofactorVariableIVX963SHA256AESGCM`. For more information about server side encryption for Apple’s Security API, please refer to [Encrypting for Apple’s Secure Enclave | Darth Null](https://darthnull.org/security/2018/05/31/secure-enclave-ecies/). [Here](https://gist.github.com/KhaosT/73d56a3cd0496aefaa74c8e320602547) is an example in Go.
