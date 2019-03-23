@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lmt-8M-VN1" pageOrientation="vertical">
+    <device id="watch40" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="dGL-qE-klD">
+            <objects>
+                <controller identifier="Home" title="Home" id="HWe-PW-0Lp" customClass="HomeInterfaceController" customModule="Watch_Extension">
+                    <items>
+                        <table alignment="left" hidden="YES" pagingScroll="YES" id="lwT-iP-gzo">
+                            <items>
+                                <tableRow identifier="PlaylistRow" id="isx-iD-lH4">
+                                    <group key="rootItem" width="1" alignment="left" id="hqQ-2l-zhw">
+                                        <connections>
+                                            <segue destination="z20-MY-xRr" kind="push" identifier="push-playlist" id="dw0-qe-zn5"/>
+                                        </connections>
+                                    </group>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <group width="1" alignment="center" hidden="YES" layout="vertical" spacing="0.0" id="IJx-Uc-EwR">
+                            <items>
+                                <button alignment="center" id="bzq-O3-ZF7">
+                                    <group key="contentGroup" width="1" height="56" alignment="left" spacing="5" id="hdb-mL-6KP">
+                                        <items>
+                                            <group width="32" height="32" alignment="left" verticalAlignment="center" contentMode="scaleAspectFill" radius="3" spacing="5" id="BBa-dT-oku">
+                                                <items>
+                                                    <imageView alignment="left" alpha="0.80000000000000004" image="Playing0" contentMode="scaleAspectFit" id="r2O-Gi-PXj"/>
+                                                </items>
+                                            </group>
+                                            <group alignment="left" verticalAlignment="center" layout="vertical" spacing="1" id="0RP-qp-ZZH">
+                                                <items>
+                                                    <label alignment="left" text="Now Playing" id="eSX-tV-3rR">
+                                                        <fontDescription key="font" type="boldSystem" pointSize="12"/>
+                                                    </label>
+                                                    <label alignment="left" text="{Title}" numberOfLines="2" id="D8o-qL-Z08">
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                        </items>
+                                        <color key="backgroundColor" red="0.13335493209999999" green="0.1332335174" blue="0.1373963356" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <edgeInsets key="margins" left="4" right="4" top="0.0" bottom="0.0"/>
+                                    </group>
+                                    <connections>
+                                        <segue destination="fDA-2j-mPB" kind="push" id="gjI-QJ-0P6"/>
+                                    </connections>
+                                </button>
+                                <group width="1" height="8" alignment="center" id="93q-hQ-7JU"/>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                        </group>
+                        <button alignment="left" id="rnV-37-LDH">
+                            <group key="contentGroup" width="1" alignment="left" spacing="12" id="pkm-36-MQL">
+                                <items>
+                                    <imageView alignment="left" verticalAlignment="center" image="Playlists" id="f5C-m1-DXn"/>
+                                    <label alignment="left" verticalAlignment="center" text="Playlists" id="t4k-ET-ed3">
+                                        <fontDescription key="font" type="system" pointSize="15"/>
+                                    </label>
+                                </items>
+                                <color key="backgroundColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <edgeInsets key="margins" left="12" right="12" top="10" bottom="10"/>
+                            </group>
+                            <connections>
+                                <action selector="didTapPlaylistButton" destination="HWe-PW-0Lp" id="Hjg-Dh-jMa"/>
+                            </connections>
+                        </button>
+                        <button alignment="left" id="f2t-IJ-06c">
+                            <group key="contentGroup" width="1" alignment="left" spacing="12" id="NjR-6Z-87e">
+                                <items>
+                                    <imageView alignment="left" verticalAlignment="center" image="Browse" id="7zU-No-X3m"/>
+                                    <label alignment="left" verticalAlignment="center" text="Explore" id="3Jr-gI-aVH">
+                                        <fontDescription key="font" type="system" pointSize="15"/>
+                                    </label>
+                                </items>
+                                <color key="backgroundColor" red="0.1333333333" green="0.1333333333" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <edgeInsets key="margins" left="12" right="12" top="10" bottom="10"/>
+                            </group>
+                            <connections>
+                                <action selector="didTapExploreButton" destination="HWe-PW-0Lp" id="94l-uv-XKo"/>
+                            </connections>
+                        </button>
+                        <button alignment="left" id="sJ4-7q-hrN">
+                            <group key="contentGroup" width="1" alignment="left" spacing="12" id="o8g-xL-Du8">
+                                <items>
+                                    <imageView alignment="left" verticalAlignment="center" image="Search" id="buc-N4-MuW"/>
+                                    <label alignment="left" verticalAlignment="center" text="Search" id="GZ8-PK-y8f">
+                                        <fontDescription key="font" type="system" pointSize="15"/>
+                                    </label>
+                                </items>
+                                <color key="backgroundColor" red="0.1333333333" green="0.1333333333" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <edgeInsets key="margins" left="12" right="12" top="10" bottom="10"/>
+                            </group>
+                            <connections>
+                                <action selector="didTapSearchButton" destination="HWe-PW-0Lp" id="aF0-lz-ZH5"/>
+                            </connections>
+                        </button>
+                        <button alignment="left" hidden="YES" id="mlF-OO-Ghi">
+                            <group key="contentGroup" width="1" alignment="left" spacing="12" id="82j-Zk-NN6">
+                                <items>
+                                    <imageView alignment="left" verticalAlignment="center" image="Download-Small" id="1VT-Ac-SiK"/>
+                                    <label alignment="left" verticalAlignment="center" text="Downloads" id="wQp-j6-GfA">
+                                        <fontDescription key="font" type="system" pointSize="15"/>
+                                    </label>
+                                </items>
+                                <color key="backgroundColor" red="0.1333333333" green="0.1333333333" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <edgeInsets key="margins" left="12" right="12" top="10" bottom="10"/>
+                            </group>
+                            <connections>
+                                <action selector="didTapDownloadsButton" destination="HWe-PW-0Lp" id="jpg-gq-jDq"/>
+                            </connections>
+                        </button>
+                        <group width="1" alignment="center" verticalAlignment="center" hidden="YES" layout="vertical" id="lvU-3W-udQ">
+                            <items>
+                                <label alignment="center" verticalAlignment="center" text="No Playlist" id="hMn-Kx-5N4">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                                <label alignment="center" verticalAlignment="center" text="It doesn't look like you have any playlist to play." textAlignment="center" numberOfLines="0" id="Qn6-Zl-8cP"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="downloadsButton" destination="mlF-OO-Ghi" id="f4q-rr-vFt"/>
+                        <outlet property="exploreButton" destination="f2t-IJ-06c" id="DNz-rN-Fkc"/>
+                        <outlet property="noPlaylistGroup" destination="lvU-3W-udQ" id="siY-S0-m5Y"/>
+                        <outlet property="nowPlayingAnimationView" destination="r2O-Gi-PXj" id="g18-5e-EQU"/>
+                        <outlet property="nowPlayingImageView" destination="BBa-dT-oku" id="1vf-N7-2x5"/>
+                        <outlet property="nowPlayingItemGroup" destination="IJx-Uc-EwR" id="WRm-O4-BC5"/>
+                        <outlet property="nowPlayingNameLabel" destination="D8o-qL-Z08" id="tsr-X7-d4Z"/>
+                        <outlet property="playlistTable" destination="lwT-iP-gzo" id="AgQ-Ck-0zW"/>
+                        <outlet property="playlistsButton" destination="rnV-37-LDH" id="4Na-SM-uhy"/>
+                        <outlet property="playlistsButtonImage" destination="f5C-m1-DXn" id="R5G-Rs-YHP"/>
+                        <outlet property="playlistsButtonText" destination="t4k-ET-ed3" id="guy-NB-xSb"/>
+                        <outlet property="searchButton" destination="sJ4-7q-hrN" id="Wr4-1x-FGN"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="86" y="-12"/>
+        </scene>
+        <!--Explore-->
+        <scene sceneID="fzS-BE-vUK">
+            <objects>
+                <controller identifier="Explore" title="Explore" spacing="8" id="QNv-M4-noH" customClass="ExploreInterfaceController" customModule="Watch_Extension">
+                    <items>
+                        <imageView alignment="center" verticalAlignment="center" image="Loading" animationDuration="1" id="v82-K1-7XL"/>
+                        <group width="1" height="0.0" alignment="center" hidden="YES" layout="vertical" radius="0.0" id="XAd-Rf-mXD">
+                            <items>
+                                <label alignment="center" text="Featured Playlists" textAlignment="center" numberOfLines="0" id="0j5-Ex-Hio"/>
+                                <table alignment="center" spacing="2" id="hmO-Wj-p3e">
+                                    <items>
+                                        <tableRow identifier="playlists" selectable="NO" id="BOz-oj-fXE" customClass="PlaylistDualItemController" customModule="Watch_Extension">
+                                            <group key="rootItem" width="1" height="0.0" alignment="left" spacing="2" id="uUf-KF-XFz">
+                                                <items>
+                                                    <button alignment="left" verticalAlignment="center" id="pK3-yH-PxB">
+                                                        <group key="contentGroup" width="0.5" alignment="left" radius="3" id="Wmp-0N-oY7">
+                                                            <items>
+                                                                <imageView width="1" alignment="center" verticalAlignment="center" contentMode="scaleAspectFill" id="H1u-XV-2s0"/>
+                                                            </items>
+                                                        </group>
+                                                        <connections>
+                                                            <action selector="didTapLeftContainer" destination="BOz-oj-fXE" id="6PW-Yx-JaX"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button alignment="right" verticalAlignment="center" id="H2B-TV-h6H">
+                                                        <group key="contentGroup" width="0.5" alignment="left" radius="3" id="C5q-QT-zMF">
+                                                            <items>
+                                                                <imageView width="1" alignment="center" verticalAlignment="center" contentMode="scaleAspectFill" id="qHQ-Mt-aVY"/>
+                                                            </items>
+                                                        </group>
+                                                        <connections>
+                                                            <action selector="didTapRightContainer" destination="BOz-oj-fXE" id="OrC-lY-R5S"/>
+                                                        </connections>
+                                                    </button>
+                                                </items>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                            </group>
+                                            <connections>
+                                                <outlet property="leftContainer" destination="pK3-yH-PxB" id="88O-fP-lg7"/>
+                                                <outlet property="leftImage" destination="H1u-XV-2s0" id="Gyn-Ph-lCf"/>
+                                                <outlet property="rightContainer" destination="H2B-TV-h6H" id="kz0-6b-c21"/>
+                                                <outlet property="rightImage" destination="qHQ-Mt-aVY" id="Fx6-be-f3t"/>
+                                            </connections>
+                                        </tableRow>
+                                    </items>
+                                </table>
+                            </items>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                        </group>
+                        <group width="1" alignment="center" hidden="YES" layout="vertical" radius="0.0" id="Ylh-rG-joQ">
+                            <items>
+                                <label alignment="left" text="Categories" textAlignment="left" id="Yfh-g2-NRw">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                                <table alignment="left" id="zRa-51-DO0">
+                                    <items>
+                                        <tableRow identifier="category" id="G7n-tV-Dm7" customClass="CategoryRowController" customModule="Watch_Extension">
+                                            <group key="rootItem" width="1" alignment="left" id="3nE-OU-6Ng">
+                                                <items>
+                                                    <label alignment="left" verticalAlignment="center" text="Label" id="qaH-YD-kti"/>
+                                                </items>
+                                            </group>
+                                            <connections>
+                                                <outlet property="label" destination="qaH-YD-kti" id="vCk-rm-FeK"/>
+                                            </connections>
+                                        </tableRow>
+                                    </items>
+                                </table>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="categoriesGroup" destination="Ylh-rG-joQ" id="pVl-ja-W2h"/>
+                        <outlet property="categoriesTable" destination="zRa-51-DO0" id="a8t-ta-uJG"/>
+                        <outlet property="featuredPlaylistsGroup" destination="XAd-Rf-mXD" id="KTZ-f9-xsO"/>
+                        <outlet property="featuredPlaylistsLabel" destination="0j5-Ex-Hio" id="ial-7K-ihE"/>
+                        <outlet property="featuredPlaylistsTable" destination="hmO-Wj-p3e" id="cOL-S8-Cya"/>
+                        <outlet property="loadingIndicator" destination="v82-K1-7XL" id="D14-ug-iln"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="86" y="366"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="sDJ-2E-Hml">
+            <objects>
+                <controller identifier="Search" title="Search" id="RNv-xb-8au" customClass="SearchInterfaceController" customModule="Watch_Extension">
+                    <items>
+                        <imageView alignment="center" verticalAlignment="center" image="Loading" animationDuration="1" id="GKK-ed-X8B"/>
+                        <label alignment="center" verticalAlignment="center" hidden="YES" text="No Results" textAlignment="center" numberOfLines="0" id="IpO-mG-ltK">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <table alignment="left" hidden="YES" spacing="2" id="YLn-S6-Fox">
+                            <items>
+                                <tableRow identifier="header" selectable="NO" id="MAC-6z-U5K" customClass="HeaderRowController" customModule="Watch_Extension">
+                                    <group key="rootItem" width="1" height="32" alignment="left" id="iHs-zo-jdu">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="bottom" text="Label" textAlignment="left" id="gQ3-Gj-xMG">
+                                                <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="label" destination="gQ3-Gj-xMG" id="ijT-Dc-Nbk"/>
+                                    </connections>
+                                </tableRow>
+                                <tableRow identifier="item" id="s7C-eb-kB8" customClass="SearchResultRowController" customModule="Watch_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" spacing="6" id="yig-oP-bvo">
+                                        <items>
+                                            <group width="32" height="32" alignment="left" verticalAlignment="center" radius="3" id="HAN-Ad-NRN">
+                                                <items>
+                                                    <imageView width="1" height="1" alignment="left" contentMode="scaleAspectFill" id="lvp-5f-KNJ"/>
+                                                </items>
+                                            </group>
+                                            <group width="1" widthAdjustment="-32" alignment="left" layout="vertical" spacing="0.0" id="KKW-sV-e1T">
+                                                <items>
+                                                    <label alignment="left" verticalAlignment="center" text="Label" textAlignment="left" numberOfLines="0" id="jMj-Hj-lcj">
+                                                        <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                                    </label>
+                                                    <label alignment="left" verticalAlignment="center" text="Label" textAlignment="left" numberOfLines="0" id="OZI-j8-NZ6">
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                        </items>
+                                        <edgeInsets key="margins" left="6" right="6" top="6" bottom="6"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="image" destination="lvp-5f-KNJ" id="Kkv-EV-Edp"/>
+                                        <outlet property="imageContainer" destination="HAN-Ad-NRN" id="XnT-vz-cwZ"/>
+                                        <outlet property="primaryLabel" destination="jMj-Hj-lcj" id="OuX-PQ-pzS"/>
+                                        <outlet property="secondaryLabel" destination="OZI-j8-NZ6" id="WAL-t2-yqT"/>
+                                    </connections>
+                                </tableRow>
+                                <tableRow identifier="playlist" selectable="NO" id="1tr-bn-JRJ" customClass="PlaylistDualItemController" customModule="Watch_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" spacing="2" id="IZB-Xq-SuO">
+                                        <items>
+                                            <button alignment="left" verticalAlignment="center" id="YKl-M1-Zhu">
+                                                <group key="contentGroup" width="0.5" alignment="left" radius="3" id="RTm-ze-e3H">
+                                                    <items>
+                                                        <imageView width="1" alignment="center" verticalAlignment="center" contentMode="scaleAspectFill" id="MJZ-0c-ruW"/>
+                                                    </items>
+                                                </group>
+                                                <connections>
+                                                    <action selector="didTapLeftContainer" destination="1tr-bn-JRJ" id="pYD-Ky-ZzQ"/>
+                                                </connections>
+                                            </button>
+                                            <button alignment="right" verticalAlignment="center" id="Rhv-sq-nOB">
+                                                <group key="contentGroup" width="0.5" alignment="left" radius="3" id="B4O-x5-YM7">
+                                                    <items>
+                                                        <imageView width="1" alignment="center" verticalAlignment="center" contentMode="scaleAspectFill" id="74O-8e-ShI"/>
+                                                    </items>
+                                                </group>
+                                                <connections>
+                                                    <action selector="didTapRightContainer" destination="1tr-bn-JRJ" id="S2Q-eK-c1p"/>
+                                                </connections>
+                                            </button>
+                                        </items>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="leftContainer" destination="YKl-M1-Zhu" id="eYe-4R-YCQ"/>
+                                        <outlet property="leftImage" destination="MJZ-0c-ruW" id="Afh-dj-6cC"/>
+                                        <outlet property="rightContainer" destination="Rhv-sq-nOB" id="GjE-dK-8cH"/>
+                                        <outlet property="rightImage" destination="74O-8e-ShI" id="059-zx-1c2"/>
+                                    </connections>
+                                </tableRow>
+                                <tableRow identifier="album" selectable="NO" id="hAO-0T-xsp" customClass="AlbumDualItemController" customModule="Watch_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" spacing="2" id="0k6-sr-kno">
+                                        <items>
+                                            <button alignment="left" verticalAlignment="center" id="rjj-Ft-j1W">
+                                                <group key="contentGroup" width="0.5" alignment="left" radius="3" id="Y3z-kU-vyG">
+                                                    <items>
+                                                        <imageView width="1" alignment="center" verticalAlignment="center" contentMode="scaleAspectFill" id="Ov6-5y-eUM"/>
+                                                    </items>
+                                                </group>
+                                                <connections>
+                                                    <action selector="didTapLeftContainer" destination="hAO-0T-xsp" id="FFk-eY-NGB"/>
+                                                </connections>
+                                            </button>
+                                            <button alignment="right" verticalAlignment="center" id="1p4-le-Pl7">
+                                                <group key="contentGroup" width="0.5" alignment="left" radius="3" id="5kw-MU-TbN">
+                                                    <items>
+                                                        <imageView width="1" alignment="center" verticalAlignment="center" contentMode="scaleAspectFill" id="AeX-4Y-ngw"/>
+                                                    </items>
+                                                </group>
+                                                <connections>
+                                                    <action selector="didTapRightContainer" destination="hAO-0T-xsp" id="L4g-iD-22s"/>
+                                                </connections>
+                                            </button>
+                                        </items>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="leftContainer" destination="rjj-Ft-j1W" id="cH3-ca-Zk4"/>
+                                        <outlet property="leftImage" destination="Ov6-5y-eUM" id="R0t-iP-k21"/>
+                                        <outlet property="rightContainer" destination="1p4-le-Pl7" id="3zM-vd-zD7"/>
+                                        <outlet property="rightImage" destination="AeX-4Y-ngw" id="24o-wa-5wi"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="loadingIndicator" destination="GKK-ed-X8B" id="dtN-xD-m7s"/>
+                        <outlet property="noResultLabel" destination="IpO-mG-ltK" id="nF9-jN-Iaz"/>
+                        <outlet property="resultTable" destination="YLn-S6-Fox" id="Fng-BM-jlV"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="86" y="728"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="IxI-4f-T1e">
+            <objects>
+                <controller identifier="Settings" title="Settings" id="axV-5O-ytJ" customClass="SettingsInterfaceController" customModule="Watch_Extension">
+                    <items>
+                        <button alignment="left" id="PMQ-Tg-kWT">
+                            <group key="contentGroup" width="1" alignment="left" spacing="6" id="xsb-Yl-Y4x">
+                                <items>
+                                    <imageView alignment="left" verticalAlignment="center" image="Storage" id="9ON-oQ-lxJ"/>
+                                    <label alignment="left" verticalAlignment="center" text="Local Storage" id="rXP-6l-Y8C">
+                                        <fontDescription key="font" type="system" pointSize="15"/>
+                                    </label>
+                                </items>
+                                <color key="backgroundColor" red="0.1333333333" green="0.1333333333" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <edgeInsets key="margins" left="6" right="6" top="8" bottom="8"/>
+                            </group>
+                            <connections>
+                                <action selector="didTapStorageButton" destination="axV-5O-ytJ" id="PAx-gj-cmJ"/>
+                            </connections>
+                        </button>
+                        <switch width="1" alignment="left" title="Shuffle" id="4tb-4t-mOv">
+                            <connections>
+                                <action selector="didToggleShuffle:" destination="axV-5O-ytJ" id="PMW-2U-B8q"/>
+                            </connections>
+                        </switch>
+                    </items>
+                    <connections>
+                        <outlet property="shuffleSwitch" destination="4tb-4t-mOv" id="eFq-k2-eig"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="86" y="1086"/>
+        </scene>
+        <!--Local Storage-->
+        <scene sceneID="f06-L2-M2k">
+            <objects>
+                <controller identifier="Storage Settings" title="Local Storage" id="zGx-aj-1Pe" customClass="StorageSettingsInterfaceController" customModule="Watch_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="Delete Cache" id="2Hb-V1-Tqp">
+                            <connections>
+                                <action selector="didTapDeleteCache" destination="zGx-aj-1Pe" id="seH-M0-agE"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Delete Download" id="vcF-a0-rJh">
+                            <connections>
+                                <action selector="didTapDeleteDownload" destination="zGx-aj-1Pe" id="lkn-YK-sM1"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="414" y="1006"/>
+        </scene>
+        <!--Message-->
+        <scene sceneID="Hf0-61-sfX">
+            <objects>
+                <controller identifier="Message" id="sy4-Pi-Yk9" customClass="MessageInterfaceController" customModule="Watch_Extension">
+                    <items>
+                        <imageView alignment="center" verticalAlignment="center" id="sAc-7Z-cIk"/>
+                        <label alignment="center" verticalAlignment="center" text="{Title}" textAlignment="center" id="7mG-U2-QFF">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <label alignment="center" verticalAlignment="center" text="{Message}" textAlignment="center" numberOfLines="0" id="D24-5Q-7H7"/>
+                    </items>
+                    <connections>
+                        <outlet property="imageView" destination="sAc-7Z-cIk" id="X03-ED-Ajl"/>
+                        <outlet property="messageLabel" destination="D24-5Q-7H7" id="zB5-e2-GUm"/>
+                        <outlet property="titleLabel" destination="7mG-U2-QFF" id="EfO-By-abk"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-254" y="-372"/>
+        </scene>
+        <!--Initialization-->
+        <scene sceneID="oH4-hA-BY4">
+            <objects>
+                <controller identifier="Initialization" id="lmt-8M-VN1" customClass="InitializationInterfaceController" customModule="Watch_Extension">
+                    <items>
+                        <imageView alignment="center" verticalAlignment="center" image="Loading" animationDuration="1" id="RAT-1E-0bC"/>
+                        <label alignment="center" verticalAlignment="center" text="Updating…" textAlignment="center" id="Na5-EP-2iz">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <button alignment="center" verticalAlignment="bottom" id="y9j-mB-zT4">
+                            <group key="contentGroup" width="1" alignment="left" spacing="8" id="rPW-ZW-AIJ">
+                                <items>
+                                    <imageView alignment="center" verticalAlignment="center" image="Offline-Small" id="4hi-xS-8Jf"/>
+                                    <label alignment="center" verticalAlignment="center" text="Offline Mode" numberOfLines="0" id="mEE-VE-Lat">
+                                        <fontDescription key="font" type="system" weight="semibold" pointSize="15"/>
+                                    </label>
+                                </items>
+                                <color key="backgroundColor" red="0.1333333333" green="0.1333333333" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <edgeInsets key="margins" left="12" right="12" top="10" bottom="10"/>
+                            </group>
+                            <connections>
+                                <action selector="didTapOfflineMode" destination="lmt-8M-VN1" id="aDx-xZ-CgA"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="statusLabel" destination="Na5-EP-2iz" id="r8T-PN-k6Y"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-254" y="-13"/>
+        </scene>
+        <!--Playlist Overview-->
+        <scene sceneID="U42-LC-7kh">
+            <objects>
+                <controller identifier="Playlist Overview" hidesWhenLoading="NO" id="z20-MY-xRr" customClass="PlaylistOverviewInterfaceController" customModule="Watch_Extension">
+                    <items>
+                        <button alignment="center" verticalAlignment="center" id="6mC-uh-RdH">
+                            <group key="contentGroup" width="0.90000000000000002" alignment="left" layout="vertical" id="khZ-7U-mQS">
+                                <items>
+                                    <group width="1" alignment="center" verticalAlignment="center" layout="vertical" radius="6" id="WuP-Sq-lA5">
+                                        <items>
+                                            <imageView alignment="center" verticalAlignment="center" image="Loading1" contentMode="scaleAspectFill" id="ZbM-bI-QGj"/>
+                                        </items>
+                                    </group>
+                                    <label alignment="center" verticalAlignment="bottom" text="{Playlist}" textAlignment="center" id="xvK-Le-nv3">
+                                        <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                    </label>
+                                </items>
+                            </group>
+                            <connections>
+                                <action selector="didTapPlaylist" destination="z20-MY-xRr" id="zPT-gE-yHe"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="imageView" destination="ZbM-bI-QGj" id="sPL-En-459"/>
+                        <outlet property="titleLabel" destination="xvK-Le-nv3" id="zrB-QY-Qpw"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="414" y="-13"/>
+        </scene>
+        <!--Download Playlist-->
+        <scene sceneID="csa-XA-deN">
+            <objects>
+                <controller identifier="Download Playlist" id="fqo-pR-kKA" customClass="DownloadPlaylistInterfaceController" customModule="Watch_Extension">
+                    <items>
+                        <group width="1" alignment="center" verticalAlignment="center" layout="vertical" id="u97-kA-rco">
+                            <items>
+                                <imageView alignment="center" verticalAlignment="center" image="Loading" animationDuration="1" id="ZbH-eO-xEw"/>
+                                <label alignment="center" verticalAlignment="center" text="Preparing…" textAlignment="center" id="y51-zC-z9J">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                                <label alignment="center" verticalAlignment="center" text="Please keep your Apple Watch screen on and stay at this page while we prepare to download the playlist." textAlignment="center" numberOfLines="0" id="avG-CC-w5R"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="loadingIndicator" destination="ZbH-eO-xEw" id="GB1-mT-li4"/>
+                        <outlet property="messageLabel" destination="avG-CC-w5R" id="2AJ-mQ-Kak"/>
+                        <outlet property="titleLabel" destination="y51-zC-z9J" id="Zy3-Ur-gOk"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="761" y="-13"/>
+        </scene>
+        <!--Category Detail-->
+        <scene sceneID="wzY-6K-TOT">
+            <objects>
+                <controller identifier="Category Detail" id="fSS-Zp-Itm" customClass="CategoryInterfaceController" customModule="Watch_Extension">
+                    <items>
+                        <imageView alignment="center" verticalAlignment="center" image="Loading" animationDuration="1" id="YIc-5J-G0H"/>
+                        <table alignment="center" hidden="YES" spacing="2" id="HPS-qN-Gj2">
+                            <items>
+                                <tableRow identifier="playlists" selectable="NO" id="L3z-ya-Zgi" customClass="PlaylistDualItemController" customModule="Watch_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" spacing="2" id="HPb-kI-9ZH">
+                                        <items>
+                                            <button alignment="left" verticalAlignment="center" id="1XL-vp-Go8">
+                                                <group key="contentGroup" width="0.5" alignment="left" radius="3" id="n8C-4B-uss">
+                                                    <items>
+                                                        <imageView width="1" alignment="center" verticalAlignment="center" contentMode="scaleAspectFill" id="7uJ-UE-IKQ"/>
+                                                    </items>
+                                                </group>
+                                                <connections>
+                                                    <action selector="didTapLeftContainer" destination="L3z-ya-Zgi" id="jX6-h8-Y84"/>
+                                                </connections>
+                                            </button>
+                                            <button alignment="right" verticalAlignment="center" id="erm-Wp-y3U">
+                                                <group key="contentGroup" width="0.5" alignment="left" radius="3" id="VIf-ob-pKa">
+                                                    <items>
+                                                        <imageView width="1" alignment="center" verticalAlignment="center" contentMode="scaleAspectFill" id="2ao-wA-qh2"/>
+                                                    </items>
+                                                </group>
+                                                <connections>
+                                                    <action selector="didTapRightContainer" destination="L3z-ya-Zgi" id="wNl-HP-4sm"/>
+                                                </connections>
+                                            </button>
+                                        </items>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="leftContainer" destination="1XL-vp-Go8" id="ADB-3y-G3O"/>
+                                        <outlet property="leftImage" destination="7uJ-UE-IKQ" id="6UH-tK-v82"/>
+                                        <outlet property="rightContainer" destination="erm-Wp-y3U" id="gSP-JA-fVa"/>
+                                        <outlet property="rightImage" destination="2ao-wA-qh2" id="i6x-Ui-DcE"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="loadingIndicator" destination="YIc-5J-G0H" id="stI-ie-eIS"/>
+                        <outlet property="playlistsTable" destination="HPS-qN-Gj2" id="aFz-B2-VDK"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="414" y="365"/>
+        </scene>
+        <!--Artist Detail-->
+        <scene sceneID="LWG-eR-70l">
+            <objects>
+                <controller identifier="Artist Detail" id="bBz-UW-hzh" customClass="ArtistDetailInterfaceController" customModule="Watch_Extension">
+                    <items>
+                        <imageView alignment="center" verticalAlignment="center" image="Loading" animationDuration="1" id="VnB-nX-yct"/>
+                        <label alignment="center" verticalAlignment="center" hidden="YES" text="No Results" textAlignment="center" numberOfLines="0" id="FjI-n6-oqj">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <table alignment="left" hidden="YES" spacing="2" id="fcs-bX-uWI">
+                            <items>
+                                <tableRow identifier="album" selectable="NO" id="iDL-zA-buZ" customClass="AlbumDualItemController" customModule="Watch_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" spacing="2" id="wk2-3i-qDs">
+                                        <items>
+                                            <button alignment="left" verticalAlignment="center" id="hMV-Hw-F6f">
+                                                <group key="contentGroup" width="0.5" alignment="left" radius="3" id="Omh-QJ-s70">
+                                                    <items>
+                                                        <imageView width="1" alignment="center" verticalAlignment="center" contentMode="scaleAspectFill" id="ejK-mF-Kfa"/>
+                                                    </items>
+                                                </group>
+                                                <connections>
+                                                    <action selector="didTapLeftContainer" destination="iDL-zA-buZ" id="nEl-wU-vqP"/>
+                                                </connections>
+                                            </button>
+                                            <button alignment="right" verticalAlignment="center" id="Vr2-q4-Xdd">
+                                                <group key="contentGroup" width="0.5" alignment="left" radius="3" id="olr-hn-Z1C">
+                                                    <items>
+                                                        <imageView width="1" alignment="center" verticalAlignment="center" contentMode="scaleAspectFill" id="B2f-GK-M58"/>
+                                                    </items>
+                                                </group>
+                                                <connections>
+                                                    <action selector="didTapRightContainer" destination="iDL-zA-buZ" id="9RC-5U-ams"/>
+                                                </connections>
+                                            </button>
+                                        </items>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="leftContainer" destination="hMV-Hw-F6f" id="6Z9-zz-7zu"/>
+                                        <outlet property="leftImage" destination="ejK-mF-Kfa" id="yW4-ru-IU5"/>
+                                        <outlet property="rightContainer" destination="Vr2-q4-Xdd" id="wLw-lF-Nkz"/>
+                                        <outlet property="rightImage" destination="B2f-GK-M58" id="fJd-C5-1pd"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="loadingIndicator" destination="VnB-nX-yct" id="EGo-RS-JmX"/>
+                        <outlet property="noResultLabel" destination="FjI-n6-oqj" id="XbX-NJ-Ieh"/>
+                        <outlet property="resultTable" destination="fcs-bX-uWI" id="M1r-i1-SdH"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="761" y="365"/>
+        </scene>
+        <!--Downloads-->
+        <scene sceneID="vpd-FL-Xqe">
+            <objects>
+                <controller identifier="Downloads" title="Downloads" id="gY2-5E-lOp" customClass="DownloadsInterfaceController" customModule="Watch_Extension">
+                    <items>
+                        <table alignment="center" id="uiv-eo-tec">
+                            <items>
+                                <tableRow identifier="DownloadTask" selectable="NO" id="O32-BB-nuh" customClass="DownloadTaskRowController" customModule="Watch_Extension">
+                                    <group key="rootItem" width="1" alignment="left" layout="vertical" spacing="0.0" id="Xlk-37-nDC">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Label" textAlignment="left" id="ndu-r3-rMU">
+                                                <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                            </label>
+                                            <label alignment="left" verticalAlignment="center" text="Label" textAlignment="left" id="EsT-aU-s2E">
+                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="subtitleLabel" destination="EsT-aU-s2E" id="0fg-YU-Sz4"/>
+                                        <outlet property="titleLabel" destination="ndu-r3-rMU" id="5Pl-Kk-gJM"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tasksTable" destination="uiv-eo-tec" id="flA-jj-JId"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="761" y="728"/>
+        </scene>
+        <!--Now Playing-->
+        <scene sceneID="omc-Kb-yTU">
+            <objects>
+                <controller identifier="Now Playing" fullBounds="YES" id="fDA-2j-mPB" customClass="NowPlayingInterfaceController" customModule="Watch_Extension">
+                    <items>
+                        <group width="1" alignment="center" layout="vertical" spacing="0.0" id="AU1-vC-bAP">
+                            <items>
+                                <label alignment="center" verticalAlignment="center" text="{Title}" textAlignment="center" numberOfLines="2" id="yTP-98-Ln0">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                                <label alignment="center" verticalAlignment="center" text="{Subtitle}" textAlignment="center" id="Rby-1t-gjL">
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="4" bottom="0.0"/>
+                            <variation key="device=watch38mm">
+                                <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                            </variation>
+                        </group>
+                        <group width="1" alignment="center" verticalAlignment="center" id="XAv-GY-9fk">
+                            <items>
+                                <button alignment="left" verticalAlignment="center" backgroundImage="Previous" id="4a9-5y-4QN">
+                                    <connections>
+                                        <action selector="didTapPrevious" destination="fDA-2j-mPB" id="c31-xT-tI4"/>
+                                    </connections>
+                                </button>
+                                <button alignment="center" verticalAlignment="center" backgroundImage="Play" id="AlF-Wj-gML">
+                                    <connections>
+                                        <action selector="didTapPlayPauseButton" destination="fDA-2j-mPB" id="7qf-h9-p9m"/>
+                                    </connections>
+                                </button>
+                                <button alignment="right" verticalAlignment="center" backgroundImage="Next" id="zqK-aD-XEU">
+                                    <connections>
+                                        <action selector="didTapNext" destination="fDA-2j-mPB" id="xnU-7p-NHx"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="center" verticalAlignment="bottom" id="0xx-iZ-KNx">
+                            <items>
+                                <volumeControlView alignment="center" verticalAlignment="center" id="QWB-wj-9hK"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="playPauseButton" destination="AlF-Wj-gML" id="5D1-F6-9jP"/>
+                        <outlet property="subtitleLabel" destination="Rby-1t-gjL" id="pUO-Ad-4B4"/>
+                        <outlet property="titleLabel" destination="yTP-98-Ln0" id="8BG-V2-tD0"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="414" y="728"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.33340213982269723" green="0.84863055327216985" blue="0.29379630977211096" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+</document>

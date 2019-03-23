@@ -1,0 +1,3364 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC10489D217340E600DBD8F0 /* NowPlayingInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC10489C217340E600DBD8F0 /* NowPlayingInterfaceController.swift */; };
+		CC2DADD5216ADB7800F5416B /* HomeInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2DADD4216ADB7800F5416B /* HomeInterfaceController.swift */; };
+		CC2DADD7216AF6ED00F5416B /* SpotifyServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2DADD6216AF6ED00F5416B /* SpotifyServices.swift */; };
+		CC31AD80218FBEAF002240A7 /* DownloadTaskRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC31AD7F218FBEAF002240A7 /* DownloadTaskRowController.swift */; };
+		CC31AD9A218FD135002240A7 /* StorageSettingsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC31AD99218FD135002240A7 /* StorageSettingsInterfaceController.swift */; };
+		CC32AB66218E7BB8000BF09D /* AnyPlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC32AB65218E7BB7000BF09D /* AnyPlaylist.swift */; };
+		CC32AB67218E7BB8000BF09D /* AnyPlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC32AB65218E7BB7000BF09D /* AnyPlaylist.swift */; };
+		CC3538372186CF0500D8358C /* CompanionCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3538362186CF0500D8358C /* CompanionCommunicator.swift */; };
+		CC35383A2186D17600D8358C /* AppSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3538392186D17600D8358C /* AppSession.swift */; };
+		CC35383C2186D30500D8358C /* ConfigurationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC35383B2186D30500D8358C /* ConfigurationServices.swift */; };
+		CC35384A2186D97000D8358C /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3538492186D97000D8358C /* WelcomeViewController.swift */; };
+		CC35384B2186D98800D8358C /* ConfigurationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC35383B2186D30500D8358C /* ConfigurationServices.swift */; };
+		CC35384F2186DA2B00D8358C /* SpotifyAuthorizationContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC35384E2186DA2B00D8358C /* SpotifyAuthorizationContext.swift */; };
+		CC35385D2186DFAD00D8358C /* DefaultServiceConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC35385C2186DFAD00D8358C /* DefaultServiceConfiguration.swift */; };
+		CC3538602186E1A200D8358C /* TokenRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC35385F2186E1A200D8358C /* TokenRequestViewController.swift */; };
+		CC3538622186E1F500D8358C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3538612186E1F500D8358C /* BaseViewController.swift */; };
+		CC3538642186E27F00D8358C /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3538632186E27F00D8358C /* BaseNavigationViewController.swift */; };
+		CC3538652186E5B500D8358C /* SpotifyServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2DADD6216AF6ED00F5416B /* SpotifyServices.swift */; };
+		CC3538672186E6C100D8358C /* TokenSyncViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3538662186E6C100D8358C /* TokenSyncViewController.swift */; };
+		CC35386A2186E7BF00D8358C /* WatchCommunicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3538692186E7BF00D8358C /* WatchCommunicationManager.swift */; };
+		CC35386C2186EBD200D8358C /* WatchMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC35386B2186EBD200D8358C /* WatchMessage.swift */; };
+		CC35386D2186EBE400D8358C /* WatchMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC35386B2186EBD200D8358C /* WatchMessage.swift */; };
+		CC35386F2186EFAA00D8358C /* SetupCompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC35386E2186EFAA00D8358C /* SetupCompleteViewController.swift */; };
+		CC3538722186F2DA00D8358C /* IllegibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3538712186F2DA00D8358C /* IllegibleViewController.swift */; };
+		CC36C56A21604EEF002DF052 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC36C56921604EEF002DF052 /* Logging.swift */; };
+		CC36C56B21604EEF002DF052 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC36C56921604EEF002DF052 /* Logging.swift */; };
+		CC39F2042179B7790074A20C /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC39F2032179B7790074A20C /* UIImage+Resize.swift */; };
+		CC39F2052179B7790074A20C /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC39F2032179B7790074A20C /* UIImage+Resize.swift */; };
+		CC39FDF5218523AA00FE94C4 /* LocalStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC39FDF4218523AA00FE94C4 /* LocalStorageManager.swift */; };
+		CC39FDF6218523AA00FE94C4 /* LocalStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC39FDF4218523AA00FE94C4 /* LocalStorageManager.swift */; };
+		CC39FDF8218523CD00FE94C4 /* LocalStorageClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC39FDF7218523CD00FE94C4 /* LocalStorageClass.swift */; };
+		CC39FDF9218523CD00FE94C4 /* LocalStorageClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC39FDF7218523CD00FE94C4 /* LocalStorageClass.swift */; };
+		CC39FDFB218523EF00FE94C4 /* LocalStorageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC39FDFA218523EF00FE94C4 /* LocalStorageItem.swift */; };
+		CC39FDFC218523EF00FE94C4 /* LocalStorageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC39FDFA218523EF00FE94C4 /* LocalStorageItem.swift */; };
+		CC39FDFE2185241F00FE94C4 /* AudioFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC39FDFD2185241F00FE94C4 /* AudioFile.swift */; };
+		CC39FDFF2185241F00FE94C4 /* AudioFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC39FDFD2185241F00FE94C4 /* AudioFile.swift */; };
+		CC3D2F9E218E4F08009FCF44 /* ArtworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3D2F9D218E4F08009FCF44 /* ArtworkService.swift */; };
+		CC3D2F9F218E4F08009FCF44 /* ArtworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3D2F9D218E4F08009FCF44 /* ArtworkService.swift */; };
+		CC3D2FA2218E5748009FCF44 /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3D2FA1218E5748009FCF44 /* DownloadManager.swift */; };
+		CC3D2FA3218E5748009FCF44 /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3D2FA1218E5748009FCF44 /* DownloadManager.swift */; };
+		CC52EF0A2172BD5C00CA225B /* TrackFileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC52EF092172BD5C00CA225B /* TrackFileInfo.swift */; };
+		CC52EF0B2172BD5C00CA225B /* TrackFileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC52EF092172BD5C00CA225B /* TrackFileInfo.swift */; };
+		CC52EF0D2172C01500CA225B /* FileStorageResolveResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC52EF0C2172C01500CA225B /* FileStorageResolveResponse.swift */; };
+		CC52EF0E2172C01500CA225B /* FileStorageResolveResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC52EF0C2172C01500CA225B /* FileStorageResolveResponse.swift */; };
+		CC57A332218FEAA800C6223F /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7A4B47218EC74400BE33B1 /* Color.swift */; };
+		CC688F0921867D8D006D7277 /* Array+ImageSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC688F0821867D8D006D7277 /* Array+ImageSize.swift */; };
+		CC688F0A21867D8D006D7277 /* Array+ImageSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC688F0821867D8D006D7277 /* Array+ImageSize.swift */; };
+		CC688F0C2186815C006D7277 /* Array+SpotifyImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC688F0B2186815C006D7277 /* Array+SpotifyImage.swift */; };
+		CC7A4B43218EC30400BE33B1 /* StepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7A4B42218EC30400BE33B1 /* StepViewController.swift */; };
+		CC7A4B46218EC70C00BE33B1 /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7A4B45218EC70C00BE33B1 /* ActionButton.swift */; };
+		CC7A4B48218EC74400BE33B1 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7A4B47218EC74400BE33B1 /* Color.swift */; };
+		CC7A4B56218ECB4800BE33B1 /* HelloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7A4B55218ECB4800BE33B1 /* HelloViewController.swift */; };
+		CC7A4B58218ECC6D00BE33B1 /* SessionLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7A4B57218ECC6D00BE33B1 /* SessionLoadingViewController.swift */; };
+		CC7A4B5A218ED10700BE33B1 /* MessageInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7A4B59218ED10700BE33B1 /* MessageInterfaceController.swift */; };
+		CC7EB6E8215F281B006713B5 /* AudioKit.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB6E6215F281B006713B5 /* AudioKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC7EB6F2215F2831006713B5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7EB6F1215F2831006713B5 /* AVFoundation.framework */; };
+		CC7EB6F4215F2859006713B5 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7EB6F3215F2859006713B5 /* CoreAudio.framework */; };
+		CC7EB6F6215F2867006713B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7EB6F5215F2867006713B5 /* Foundation.framework */; };
+		CC7EB6F8215F2894006713B5 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7EB6F7215F2894006713B5 /* MediaPlayer.framework */; };
+		CC7EB6FB215F28C4006713B5 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB6FA215F28C4006713B5 /* AudioPlayer.swift */; };
+		CC7EB706215F2935006713B5 /* SpotifyServices.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB704215F2935006713B5 /* SpotifyServices.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC7EB709215F2935006713B5 /* SpotifyServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7EB702215F2935006713B5 /* SpotifyServices.framework */; };
+		CC7EB70A215F2935006713B5 /* SpotifyServices.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC7EB702215F2935006713B5 /* SpotifyServices.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CC7EB712215F299F006713B5 /* SpotifyServices.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB704215F2935006713B5 /* SpotifyServices.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC7EB71B215F29F7006713B5 /* SpotifyServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7EB719215F299F006713B5 /* SpotifyServices.framework */; };
+		CC7EB71C215F29F7006713B5 /* SpotifyServices.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC7EB719215F299F006713B5 /* SpotifyServices.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CC7EB721215F2A1D006713B5 /* SpotifyServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB720215F2A1D006713B5 /* SpotifyServiceProvider.swift */; };
+		CC7EB722215F2A1D006713B5 /* SpotifyServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB720215F2A1D006713B5 /* SpotifyServiceProvider.swift */; };
+		CC7EB727215F2A74006713B5 /* AudioTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB726215F2A74006713B5 /* AudioTrack.swift */; };
+		CC7EB72A215F2BE6006713B5 /* AudioTrackMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB729215F2BE6006713B5 /* AudioTrackMetadata.swift */; };
+		CC7EB72D215F332B006713B5 /* AudioSessionNotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB72C215F332B006713B5 /* AudioSessionNotificationHandler.swift */; };
+		CC7EB72F215F3DE5006713B5 /* AudioSessionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB72E215F3DE5006713B5 /* AudioSessionState.swift */; };
+		CC7EB76C215F4EBB006713B5 /* Ogg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7EB765215F4EBB006713B5 /* Ogg.framework */; };
+		CC7EB76D215F4EBB006713B5 /* Ogg.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC7EB765215F4EBB006713B5 /* Ogg.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CC7EB780215F4F6F006713B5 /* bitwise.c in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB77E215F4F6F006713B5 /* bitwise.c */; };
+		CC7EB781215F4F6F006713B5 /* bitwise.c in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB77E215F4F6F006713B5 /* bitwise.c */; };
+		CC7EB782215F4F6F006713B5 /* framing.c in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB77F215F4F6F006713B5 /* framing.c */; };
+		CC7EB783215F4F6F006713B5 /* framing.c in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB77F215F4F6F006713B5 /* framing.c */; };
+		CC7EB789215F4F88006713B5 /* os_types.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB786215F4F87006713B5 /* os_types.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC7EB78A215F4F88006713B5 /* os_types.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB786215F4F87006713B5 /* os_types.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC7EB78C215F50A3006713B5 /* ogg.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB78B215F50A3006713B5 /* ogg.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC7EB78D215F50A3006713B5 /* ogg.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB78B215F50A3006713B5 /* ogg.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC7EB78E215F51E9006713B5 /* Ogg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7EB77C215F4F23006713B5 /* Ogg.framework */; };
+		CC7EB78F215F51E9006713B5 /* Ogg.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC7EB77C215F4F23006713B5 /* Ogg.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CC7EB79F215F5589006713B5 /* Vorbis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7EB798215F5589006713B5 /* Vorbis.framework */; };
+		CC7EB7A0215F5589006713B5 /* Vorbis.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC7EB798215F5589006713B5 /* Vorbis.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CC7EB7B4215F561E006713B5 /* vorbisfile.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7B1215F561E006713B5 /* vorbisfile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC7EB7B5215F561E006713B5 /* vorbisfile.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7B1215F561E006713B5 /* vorbisfile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC7EB7B6215F561E006713B5 /* vorbisenc.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7B2215F561E006713B5 /* vorbisenc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC7EB7B7215F561E006713B5 /* vorbisenc.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7B2215F561E006713B5 /* vorbisenc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC7EB7B8215F561E006713B5 /* codec.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7B3215F561E006713B5 /* codec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC7EB7B9215F561E006713B5 /* codec.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7B3215F561E006713B5 /* codec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC7EB80D215F5668006713B5 /* sharedbook.c in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB7BA215F5666006713B5 /* sharedbook.c */; };
+		CC7EB80E215F5668006713B5 /* sharedbook.c in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB7BA215F5666006713B5 /* sharedbook.c */; };
+		CC7EB80F215F5668006713B5 /* smallft.c in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB7BB215F5666006713B5 /* smallft.c */; };
+		CC7EB810215F5668006713B5 /* smallft.c in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB7BB215F5666006713B5 /* smallft.c */; };
+		CC7EB813215F5668006713B5 /* misc.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7BD215F5666006713B5 /* misc.h */; };
+		CC7EB814215F5668006713B5 /* misc.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7BD215F5666006713B5 /* misc.h */; };
+		CC7EB817215F5668006713B5 /* lpc.c in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB7BF215F5666006713B5 /* lpc.c */; };
+		CC7EB818215F5668006713B5 /* lpc.c in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB7BF215F5666006713B5 /* lpc.c */; };
+		CC7EB819215F5668006713B5 /* mdct.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7C0215F5666006713B5 /* mdct.h */; };
+		CC7EB81A215F5668006713B5 /* mdct.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7C0215F5666006713B5 /* mdct.h */; };
+		CC7EB81B215F5668006713B5 /* codebook.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7C1215F5666006713B5 /* codebook.h */; };
+		CC7EB81C215F5668006713B5 /* codebook.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7C1215F5666006713B5 /* codebook.h */; };
+		CC7EB81D215F5668006713B5 /* os.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7C2215F5666006713B5 /* os.h */; };
+		CC7EB81E215F5668006713B5 /* os.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7C2215F5666006713B5 /* os.h */; };
+		CC7EB81F215F5668006713B5 /* lookup.c in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB7C3215F5666006713B5 /* lookup.c */; };
+		CC7EB820215F5668006713B5 /* lookup.c in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB7C3215F5666006713B5 /* lookup.c */; };
+		CC7EB821215F5668006713B5 /* psych_44.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7C5215F5666006713B5 /* psych_44.h */; };
+		CC7EB822215F5668006713B5 /* psych_44.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7C5215F5666006713B5 /* psych_44.h */; };
+		CC7EB823215F5668006713B5 /* setup_11.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7C6215F5666006713B5 /* setup_11.h */; };
+		CC7EB824215F5668006713B5 /* setup_11.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7C6215F5666006713B5 /* setup_11.h */; };
+		CC7EB825215F5668006713B5 /* setup_44u.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7C7215F5666006713B5 /* setup_44u.h */; };
+		CC7EB826215F5668006713B5 /* setup_44u.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7C7215F5666006713B5 /* setup_44u.h */; };
+		CC7EB827215F5668006713B5 /* setup_8.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7C8215F5666006713B5 /* setup_8.h */; };
+		CC7EB828215F5668006713B5 /* setup_8.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7C8215F5666006713B5 /* setup_8.h */; };
+		CC7EB829215F5668006713B5 /* residue_8.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7C9215F5666006713B5 /* residue_8.h */; };
+		CC7EB82A215F5668006713B5 /* residue_8.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7C9215F5666006713B5 /* residue_8.h */; };
+		CC7EB82B215F5668006713B5 /* residue_44p51.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7CA215F5666006713B5 /* residue_44p51.h */; };
+		CC7EB82C215F5668006713B5 /* residue_44p51.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7CA215F5666006713B5 /* residue_44p51.h */; };
+		CC7EB82D215F5668006713B5 /* residue_44.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7CB215F5666006713B5 /* residue_44.h */; };
+		CC7EB82E215F5668006713B5 /* residue_44.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7CB215F5666006713B5 /* residue_44.h */; };
+		CC7EB82F215F5668006713B5 /* setup_16.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7CC215F5666006713B5 /* setup_16.h */; };
+		CC7EB830215F5668006713B5 /* setup_16.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7CC215F5666006713B5 /* setup_16.h */; };
+		CC7EB831215F5668006713B5 /* setup_22.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7CD215F5666006713B5 /* setup_22.h */; };
+		CC7EB832215F5668006713B5 /* setup_22.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7CD215F5666006713B5 /* setup_22.h */; };
+		CC7EB835215F5668006713B5 /* psych_16.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7CF215F5666006713B5 /* psych_16.h */; };
+		CC7EB836215F5668006713B5 /* psych_16.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7CF215F5666006713B5 /* psych_16.h */; };
+		CC7EB837215F5668006713B5 /* psych_8.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7D0215F5666006713B5 /* psych_8.h */; };
+		CC7EB838215F5668006713B5 /* psych_8.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7D0215F5666006713B5 /* psych_8.h */; };
+		CC7EB839215F5668006713B5 /* setup_44p51.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7D1215F5666006713B5 /* setup_44p51.h */; };
+		CC7EB83A215F5668006713B5 /* setup_44p51.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7D1215F5666006713B5 /* setup_44p51.h */; };
+		CC7EB83B215F5668006713B5 /* floor_all.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7D2215F5666006713B5 /* floor_all.h */; };
+		CC7EB83C215F5668006713B5 /* floor_all.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7D2215F5666006713B5 /* floor_all.h */; };
+		CC7EB83D215F5668006713B5 /* setup_32.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7D3215F5666006713B5 /* setup_32.h */; };
+		CC7EB83E215F5668006713B5 /* setup_32.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7D3215F5666006713B5 /* setup_32.h */; };
+		CC7EB83F215F5668006713B5 /* residue_44u.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7D4215F5666006713B5 /* residue_44u.h */; };
+		CC7EB840215F5668006713B5 /* residue_44u.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7D4215F5666006713B5 /* residue_44u.h */; };
+		CC7EB841215F5668006713B5 /* setup_44.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7D5215F5666006713B5 /* setup_44.h */; };
+		CC7EB842215F5668006713B5 /* setup_44.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7D5215F5666006713B5 /* setup_44.h */; };
+		CC7EB843215F5668006713B5 /* residue_16.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7D6215F5666006713B5 /* residue_16.h */; };
+		CC7EB844215F5668006713B5 /* residue_16.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7D6215F5666006713B5 /* residue_16.h */; };
+		CC7EB845215F5668006713B5 /* psych_11.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7D7215F5666006713B5 /* psych_11.h */; };
+		CC7EB846215F5668006713B5 /* psych_11.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7D7215F5666006713B5 /* psych_11.h */; };
+		CC7EB847215F5668006713B5 /* setup_X.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7D8215F5666006713B5 /* setup_X.h */; };
+		CC7EB848215F5668006713B5 /* setup_X.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7D8215F5666006713B5 /* setup_X.h */; };
+		CC7EB84B215F5668006713B5 /* vorbisfile.c in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB7DA215F5666006713B5 /* vorbisfile.c */; };
+		CC7EB84C215F5668006713B5 /* vorbisfile.c in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB7DA215F5666006713B5 /* vorbisfile.c */; };
+		CC7EB84D215F5668006713B5 /* bitrate.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7DB215F5667006713B5 /* bitrate.h */; };
+		CC7EB84E215F5668006713B5 /* bitrate.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7DB215F5667006713B5 /* bitrate.h */; };
+		CC7EB84F215F5668006713B5 /* window.c in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB7DC215F5667006713B5 /* window.c */; };
+		CC7EB850215F5668006713B5 /* window.c in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB7DC215F5667006713B5 /* window.c */; };
+		CC7EB851215F5668006713B5 /* window.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7DD215F5667006713B5 /* window.h */; };
+		CC7EB852215F5668006713B5 /* window.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7DD215F5667006713B5 /* window.h */; };
+		CC7EB853215F5668006713B5 /* floor1.c in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB7DE215F5667006713B5 /* floor1.c */; };
+		CC7EB854215F5668006713B5 /* floor1.c in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB7DE215F5667006713B5 /* floor1.c */; };
+		CC7EB855215F5668006713B5 /* analysis.c in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB7DF215F5667006713B5 /* analysis.c */; };
+		CC7EB856215F5668006713B5 /* analysis.c in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB7DF215F5667006713B5 /* analysis.c */; };
+		CC7EB857215F5668006713B5 /* highlevel.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7E0215F5667006713B5 /* highlevel.h */; };
+		CC7EB858215F5668006713B5 /* highlevel.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7E0215F5667006713B5 /* highlevel.h */; };
+		CC7EB859215F5668006713B5 /* psy.c in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB7E1215F5667006713B5 /* psy.c */; };
+		CC7EB85A215F5668006713B5 /* psy.c in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB7E1215F5667006713B5 /* psy.c */; };
+		CC7EB85B215F5668006713B5 /* codebook.c in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB7E2215F5667006713B5 /* codebook.c */; };
+		CC7EB85C215F5668006713B5 /* codebook.c in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB7E2215F5667006713B5 /* codebook.c */; };
+		CC7EB85D215F5668006713B5 /* lookup_data.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7E3215F5667006713B5 /* lookup_data.h */; };
+		CC7EB85E215F5668006713B5 /* lookup_data.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7E3215F5667006713B5 /* lookup_data.h */; };
+		CC7EB85F215F5668006713B5 /* block.c in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB7E4215F5667006713B5 /* block.c */; };
+		CC7EB860215F5668006713B5 /* block.c in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB7E4215F5667006713B5 /* block.c */; };
+		CC7EB863215F5668006713B5 /* smallft.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7E6215F5667006713B5 /* smallft.h */; };
+		CC7EB864215F5668006713B5 /* smallft.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7E6215F5667006713B5 /* smallft.h */; };
+		CC7EB865215F5668006713B5 /* lookup.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7E7215F5667006713B5 /* lookup.h */; };
+		CC7EB866215F5668006713B5 /* lookup.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7E7215F5667006713B5 /* lookup.h */; };
+		CC7EB869215F5668006713B5 /* vorbisenc.c in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB7E9215F5667006713B5 /* vorbisenc.c */; };
+		CC7EB86A215F5668006713B5 /* vorbisenc.c in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB7E9215F5667006713B5 /* vorbisenc.c */; };
+		CC7EB86B215F5668006713B5 /* lsp.c in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB7EA215F5667006713B5 /* lsp.c */; };
+		CC7EB86C215F5668006713B5 /* lsp.c in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB7EA215F5667006713B5 /* lsp.c */; };
+		CC7EB86D215F5668006713B5 /* envelope.c in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB7EB215F5667006713B5 /* envelope.c */; };
+		CC7EB86E215F5668006713B5 /* envelope.c in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB7EB215F5667006713B5 /* envelope.c */; };
+		CC7EB86F215F5668006713B5 /* lsp.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7EC215F5667006713B5 /* lsp.h */; };
+		CC7EB870215F5668006713B5 /* lsp.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7EC215F5667006713B5 /* lsp.h */; };
+		CC7EB871215F5668006713B5 /* envelope.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7ED215F5667006713B5 /* envelope.h */; };
+		CC7EB872215F5668006713B5 /* envelope.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7ED215F5667006713B5 /* envelope.h */; };
+		CC7EB873215F5668006713B5 /* synthesis.c in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB7EE215F5667006713B5 /* synthesis.c */; };
+		CC7EB874215F5668006713B5 /* synthesis.c in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB7EE215F5667006713B5 /* synthesis.c */; };
+		CC7EB875215F5668006713B5 /* info.c in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB7EF215F5667006713B5 /* info.c */; };
+		CC7EB876215F5668006713B5 /* info.c in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB7EF215F5667006713B5 /* info.c */; };
+		CC7EB877215F5668006713B5 /* lpc.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7F0215F5667006713B5 /* lpc.h */; };
+		CC7EB878215F5668006713B5 /* lpc.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7F0215F5667006713B5 /* lpc.h */; };
+		CC7EB879215F5668006713B5 /* codec_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7F1215F5667006713B5 /* codec_internal.h */; };
+		CC7EB87A215F5668006713B5 /* codec_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7F1215F5667006713B5 /* codec_internal.h */; };
+		CC7EB87B215F5668006713B5 /* registry.c in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB7F2215F5667006713B5 /* registry.c */; };
+		CC7EB87C215F5668006713B5 /* registry.c in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB7F2215F5667006713B5 /* registry.c */; };
+		CC7EB87D215F5668006713B5 /* floor0.c in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB7F3215F5667006713B5 /* floor0.c */; };
+		CC7EB87E215F5668006713B5 /* floor0.c in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB7F3215F5667006713B5 /* floor0.c */; };
+		CC7EB87F215F5668006713B5 /* bitrate.c in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB7F4215F5667006713B5 /* bitrate.c */; };
+		CC7EB880215F5668006713B5 /* bitrate.c in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB7F4215F5667006713B5 /* bitrate.c */; };
+		CC7EB881215F5668006713B5 /* masking.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7F5215F5668006713B5 /* masking.h */; };
+		CC7EB882215F5668006713B5 /* masking.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7F5215F5668006713B5 /* masking.h */; };
+		CC7EB883215F5668006713B5 /* backends.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7F6215F5668006713B5 /* backends.h */; };
+		CC7EB884215F5668006713B5 /* backends.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7F6215F5668006713B5 /* backends.h */; };
+		CC7EB885215F5668006713B5 /* mapping0.c in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB7F7215F5668006713B5 /* mapping0.c */; };
+		CC7EB886215F5668006713B5 /* mapping0.c in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB7F7215F5668006713B5 /* mapping0.c */; };
+		CC7EB887215F5668006713B5 /* res0.c in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB7F8215F5668006713B5 /* res0.c */; };
+		CC7EB888215F5668006713B5 /* res0.c in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB7F8215F5668006713B5 /* res0.c */; };
+		CC7EB889215F5668006713B5 /* scales.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7F9215F5668006713B5 /* scales.h */; };
+		CC7EB88A215F5668006713B5 /* scales.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7F9215F5668006713B5 /* scales.h */; };
+		CC7EB88B215F5668006713B5 /* mdct.c in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB7FA215F5668006713B5 /* mdct.c */; };
+		CC7EB88C215F5668006713B5 /* mdct.c in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB7FA215F5668006713B5 /* mdct.c */; };
+		CC7EB88D215F5668006713B5 /* psy.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7FB215F5668006713B5 /* psy.h */; };
+		CC7EB88E215F5668006713B5 /* psy.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB7FB215F5668006713B5 /* psy.h */; };
+		CC7EB893215F5668006713B5 /* res_books_uncoupled.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB800215F5668006713B5 /* res_books_uncoupled.h */; };
+		CC7EB894215F5668006713B5 /* res_books_uncoupled.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB800215F5668006713B5 /* res_books_uncoupled.h */; };
+		CC7EB897215F5668006713B5 /* res_books_51.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB803215F5668006713B5 /* res_books_51.h */; };
+		CC7EB898215F5668006713B5 /* res_books_51.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB803215F5668006713B5 /* res_books_51.h */; };
+		CC7EB899215F5668006713B5 /* res_books_stereo.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB804215F5668006713B5 /* res_books_stereo.h */; };
+		CC7EB89A215F5668006713B5 /* res_books_stereo.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB804215F5668006713B5 /* res_books_stereo.h */; };
+		CC7EB8A3215F5668006713B5 /* floor_books.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB80A215F5668006713B5 /* floor_books.h */; };
+		CC7EB8A4215F5668006713B5 /* floor_books.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB80A215F5668006713B5 /* floor_books.h */; };
+		CC7EB8A7215F5668006713B5 /* registry.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB80C215F5668006713B5 /* registry.h */; };
+		CC7EB8A8215F5668006713B5 /* registry.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB80C215F5668006713B5 /* registry.h */; };
+		CC7EB8A9215F598C006713B5 /* Ogg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7EB765215F4EBB006713B5 /* Ogg.framework */; };
+		CC7EB8AA215F5990006713B5 /* Ogg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7EB77C215F4F23006713B5 /* Ogg.framework */; };
+		CC8E5640218FD5BC00FC2187 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8E563F218FD5BC00FC2187 /* ComplicationController.swift */; };
+		CC9339A92172DD3F00DF104C /* SpotifyPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9339A82172DD3F00DF104C /* SpotifyPlayer.swift */; };
+		CC997DAC21798EDB00306B52 /* AudioPlayerEventProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC997DAB21798EDB00306B52 /* AudioPlayerEventProcessor.swift */; };
+		CC997DAD21798EDB00306B52 /* AudioPlayerEventProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC997DAB21798EDB00306B52 /* AudioPlayerEventProcessor.swift */; };
+		CC997DAF21798F9600306B52 /* PlaybackState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC997DAE21798F9600306B52 /* PlaybackState.swift */; };
+		CC997DB021798F9600306B52 /* PlaybackState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC997DAE21798F9600306B52 /* PlaybackState.swift */; };
+		CC997DB221799E6400306B52 /* NowPlayingItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC997DB121799E6400306B52 /* NowPlayingItemController.swift */; };
+		CC9E3DCE218FFDDA00FCE07C /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9E3DCD218FFDDA00FCE07C /* AboutViewController.swift */; };
+		CC9E3DD0218FFFCE00FCE07C /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9E3DCF218FFFCE00FCE07C /* DetailTableViewCell.swift */; };
+		CC9E3DD3219000A200FCE07C /* Listable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9E3DD2219000A200FCE07C /* Listable.swift */; };
+		CC9E3DD621900B9600FCE07C /* Acknowledgement.html in Resources */ = {isa = PBXBuildFile; fileRef = CC9E3DD521900B9600FCE07C /* Acknowledgement.html */; };
+		CC9E3DD821900BE200FCE07C /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9E3DD721900BE200FCE07C /* WebViewController.swift */; };
+		CC9E3DDA2190158500FCE07C /* Privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = CC9E3DD92190158400FCE07C /* Privacy.html */; };
+		CCBF4EF321869C670063D41A /* SettingsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBF4EF221869C670063D41A /* SettingsInterfaceController.swift */; };
+		CCC1244B216998BD008EC269 /* KeychainServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC1244A216998BD008EC269 /* KeychainServices.swift */; };
+		CCC1244C216998BD008EC269 /* KeychainServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC1244A216998BD008EC269 /* KeychainServices.swift */; };
+		CCC1244E216998C6008EC269 /* AudioDecryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC1244D216998C6008EC269 /* AudioDecryptor.swift */; };
+		CCC1244F216998C6008EC269 /* AudioDecryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC1244D216998C6008EC269 /* AudioDecryptor.swift */; };
+		CCC42D46216AF85700FBA35A /* InitializationInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC42D45216AF85700FBA35A /* InitializationInterfaceController.swift */; };
+		CCC42D49216AFB8A00FBA35A /* PlaylistOverviewInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC42D48216AFB8A00FBA35A /* PlaylistOverviewInterfaceController.swift */; };
+		CCC42D4B216B09E800FBA35A /* ExploreInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC42D4A216B09E800FBA35A /* ExploreInterfaceController.swift */; };
+		CCC42D51216B127000FBA35A /* PlaylistDualItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC42D50216B127000FBA35A /* PlaylistDualItemController.swift */; };
+		CCC42D55216B138100FBA35A /* CategoryRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC42D54216B138100FBA35A /* CategoryRowController.swift */; };
+		CCC42D58216B150500FBA35A /* Array+Chunks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC42D57216B150500FBA35A /* Array+Chunks.swift */; };
+		CCC42D5A216B16B700FBA35A /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC42D59216B16B700FBA35A /* UIImage+Resize.swift */; };
+		CCC42D5C216B1EF100FBA35A /* CategoryInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC42D5B216B1EF100FBA35A /* CategoryInterfaceController.swift */; };
+		CCC42D5E216B22C000FBA35A /* SearchInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC42D5D216B22C000FBA35A /* SearchInterfaceController.swift */; };
+		CCC42D62216B232600FBA35A /* SearchResultRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC42D61216B232600FBA35A /* SearchResultRowController.swift */; };
+		CCCEDEB92161BA3A00BB7014 /* ServiceConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDEB82161BA3A00BB7014 /* ServiceConfiguration.swift */; };
+		CCCEDEBA2161BA3A00BB7014 /* ServiceConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDEB82161BA3A00BB7014 /* ServiceConfiguration.swift */; };
+		CCCEDEBF2161BCDB00BB7014 /* ServiceEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDEBE2161BCDB00BB7014 /* ServiceEndpoint.swift */; };
+		CCCEDEC02161BCDB00BB7014 /* ServiceEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDEBE2161BCDB00BB7014 /* ServiceEndpoint.swift */; };
+		CCCEDEC32161BE7B00BB7014 /* RefreshTokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDEC22161BE7B00BB7014 /* RefreshTokenResponse.swift */; };
+		CCCEDEC42161BE7B00BB7014 /* RefreshTokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDEC22161BE7B00BB7014 /* RefreshTokenResponse.swift */; };
+		CCCEDEC62161C13000BB7014 /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDEC52161C13000BB7014 /* UserSession.swift */; };
+		CCCEDEC72161C13000BB7014 /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDEC52161C13000BB7014 /* UserSession.swift */; };
+		CCCEDEC92161C1F000BB7014 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDEC82161C1F000BB7014 /* Result.swift */; };
+		CCCEDECA2161C1F000BB7014 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDEC82161C1F000BB7014 /* Result.swift */; };
+		CCCEDECC2161C28C00BB7014 /* SpotifyServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDECB2161C28C00BB7014 /* SpotifyServiceError.swift */; };
+		CCCEDECD2161C28C00BB7014 /* SpotifyServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDECB2161C28C00BB7014 /* SpotifyServiceError.swift */; };
+		CCCEDECF2161C3DA00BB7014 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDECE2161C3DA00BB7014 /* User.swift */; };
+		CCCEDED02161C3DA00BB7014 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDECE2161C3DA00BB7014 /* User.swift */; };
+		CCCEDED22161C43C00BB7014 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDED12161C43C00BB7014 /* Image.swift */; };
+		CCCEDED32161C43C00BB7014 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDED12161C43C00BB7014 /* Image.swift */; };
+		CCCEDED62161C76800BB7014 /* URLSession+JSONRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDED52161C76800BB7014 /* URLSession+JSONRequest.swift */; };
+		CCCEDED72161C76800BB7014 /* URLSession+JSONRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDED52161C76800BB7014 /* URLSession+JSONRequest.swift */; };
+		CCCEDEDC2161C99200BB7014 /* Paginated.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDEDB2161C99200BB7014 /* Paginated.swift */; };
+		CCCEDEDD2161C99200BB7014 /* Paginated.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDEDB2161C99200BB7014 /* Paginated.swift */; };
+		CCCEDEDF2161CA5500BB7014 /* SimplifiedPlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDEDE2161CA5500BB7014 /* SimplifiedPlaylist.swift */; };
+		CCCEDEE02161CA5500BB7014 /* SimplifiedPlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDEDE2161CA5500BB7014 /* SimplifiedPlaylist.swift */; };
+		CCCEDEE52161CEE400BB7014 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDEE42161CEE400BB7014 /* Track.swift */; };
+		CCCEDEE62161CEE400BB7014 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDEE42161CEE400BB7014 /* Track.swift */; };
+		CCCEDEE82161D04300BB7014 /* SimplifiedAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDEE72161D04300BB7014 /* SimplifiedAlbum.swift */; };
+		CCCEDEE92161D04300BB7014 /* SimplifiedAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDEE72161D04300BB7014 /* SimplifiedAlbum.swift */; };
+		CCCEDEEB2161D07300BB7014 /* Album+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDEEA2161D07300BB7014 /* Album+Enum.swift */; };
+		CCCEDEEC2161D07300BB7014 /* Album+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDEEA2161D07300BB7014 /* Album+Enum.swift */; };
+		CCCEDEEE2161D15400BB7014 /* SimplifiedArtist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDEED2161D15400BB7014 /* SimplifiedArtist.swift */; };
+		CCCEDEEF2161D15400BB7014 /* SimplifiedArtist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDEED2161D15400BB7014 /* SimplifiedArtist.swift */; };
+		CCCEDEF52161D26000BB7014 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDEF42161D26000BB7014 /* Playlist.swift */; };
+		CCCEDEF62161D26000BB7014 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDEF42161D26000BB7014 /* Playlist.swift */; };
+		CCCEDEF82161D27200BB7014 /* PlaylistTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDEF72161D27200BB7014 /* PlaylistTrack.swift */; };
+		CCCEDEF92161D27200BB7014 /* PlaylistTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDEF72161D27200BB7014 /* PlaylistTrack.swift */; };
+		CCCEDEFB2161D2DF00BB7014 /* PublicUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDEFA2161D2DF00BB7014 /* PublicUser.swift */; };
+		CCCEDEFC2161D2DF00BB7014 /* PublicUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDEFA2161D2DF00BB7014 /* PublicUser.swift */; };
+		CCCEDEFE2161D3B800BB7014 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDEFD2161D3B800BB7014 /* Follower.swift */; };
+		CCCEDEFF2161D3B800BB7014 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDEFD2161D3B800BB7014 /* Follower.swift */; };
+		CCCEDF012161D7A100BB7014 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDF002161D7A100BB7014 /* Album.swift */; };
+		CCCEDF022161D7A100BB7014 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDF002161D7A100BB7014 /* Album.swift */; };
+		CCCEDF092161D95700BB7014 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDF082161D95700BB7014 /* Category.swift */; };
+		CCCEDF0A2161D95700BB7014 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDF082161D95700BB7014 /* Category.swift */; };
+		CCCEDF0C2161D9DA00BB7014 /* SavedTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDF0B2161D9DA00BB7014 /* SavedTrack.swift */; };
+		CCCEDF0D2161D9DA00BB7014 /* SavedTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDF0B2161D9DA00BB7014 /* SavedTrack.swift */; };
+		CCCEDF0F2161DA3600BB7014 /* SavedAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDF0E2161DA3600BB7014 /* SavedAlbum.swift */; };
+		CCCEDF102161DA3600BB7014 /* SavedAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDF0E2161DA3600BB7014 /* SavedAlbum.swift */; };
+		CCCEDF122161DB9900BB7014 /* CategoriesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDF112161DB9900BB7014 /* CategoriesResponse.swift */; };
+		CCCEDF132161DB9900BB7014 /* CategoriesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDF112161DB9900BB7014 /* CategoriesResponse.swift */; };
+		CCCEDF152161DD1600BB7014 /* CategoryPlaylistsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDF142161DD1600BB7014 /* CategoryPlaylistsResponse.swift */; };
+		CCCEDF162161DD1600BB7014 /* CategoryPlaylistsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDF142161DD1600BB7014 /* CategoryPlaylistsResponse.swift */; };
+		CCCEDF182161DE4100BB7014 /* FeaturedPlaylistsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDF172161DE4100BB7014 /* FeaturedPlaylistsResponse.swift */; };
+		CCCEDF192161DE4100BB7014 /* FeaturedPlaylistsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDF172161DE4100BB7014 /* FeaturedPlaylistsResponse.swift */; };
+		CCCEDF1B2161E02300BB7014 /* NewReleasesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDF1A2161E02300BB7014 /* NewReleasesResponse.swift */; };
+		CCCEDF1C2161E02300BB7014 /* NewReleasesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCEDF1A2161E02300BB7014 /* NewReleasesResponse.swift */; };
+		CCD86F832179890B00CA6FEE /* DebugServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD86F822179890B00CA6FEE /* DebugServices.swift */; };
+		CCE124B62161F4080012D2AB /* PlaybackService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE124B52161F4080012D2AB /* PlaybackService.swift */; };
+		CCE124B72161F4080012D2AB /* PlaybackService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE124B52161F4080012D2AB /* PlaybackService.swift */; };
+		CCE124B92161F50B0012D2AB /* SpotifyAudioTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE124B82161F50B0012D2AB /* SpotifyAudioTrack.swift */; };
+		CCE124BA2161F50B0012D2AB /* SpotifyAudioTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE124B82161F50B0012D2AB /* SpotifyAudioTrack.swift */; };
+		CCE124BB2161F7230012D2AB /* Ogg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7EB765215F4EBB006713B5 /* Ogg.framework */; };
+		CCE124BC2161F7270012D2AB /* Ogg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7EB765215F4EBB006713B5 /* Ogg.framework */; };
+		CCE124BD2161F72C0012D2AB /* Vorbis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7EB798215F5589006713B5 /* Vorbis.framework */; };
+		CCE124BE2161F7300012D2AB /* Vorbis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7EB7AD215F55D1006713B5 /* Vorbis.framework */; };
+		CCE124BF2161F73E0012D2AB /* Vorbis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7EB7AD215F55D1006713B5 /* Vorbis.framework */; };
+		CCE124C02161F73E0012D2AB /* Vorbis.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC7EB7AD215F55D1006713B5 /* Vorbis.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CCE124C42161F7840012D2AB /* VorbisDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE124C32161F7840012D2AB /* VorbisDecoder.swift */; };
+		CCE124C52161F7840012D2AB /* VorbisDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE124C32161F7840012D2AB /* VorbisDecoder.swift */; };
+		CCE124C9216201B30012D2AB /* AudioKit.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7EB6E6215F281B006713B5 /* AudioKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CCE124CB216201B30012D2AB /* AudioSessionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB72E215F3DE5006713B5 /* AudioSessionState.swift */; };
+		CCE124CC216201B30012D2AB /* AudioTrackMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB729215F2BE6006713B5 /* AudioTrackMetadata.swift */; };
+		CCE124CD216201B30012D2AB /* AudioTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB726215F2A74006713B5 /* AudioTrack.swift */; };
+		CCE124CE216201B30012D2AB /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB6FA215F28C4006713B5 /* AudioPlayer.swift */; };
+		CCE124CF216201B30012D2AB /* AudioSessionNotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7EB72C215F332B006713B5 /* AudioSessionNotificationHandler.swift */; };
+		CCE124D1216201B30012D2AB /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7EB6F7215F2894006713B5 /* MediaPlayer.framework */; };
+		CCE124D2216201B30012D2AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7EB6F5215F2867006713B5 /* Foundation.framework */; };
+		CCE124D3216201B30012D2AB /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7EB6F3215F2859006713B5 /* CoreAudio.framework */; };
+		CCE124D4216201B30012D2AB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7EB6F1215F2831006713B5 /* AVFoundation.framework */; };
+		CCE124DB216202200012D2AB /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7EB6E4215F281B006713B5 /* AudioKit.framework */; };
+		CCE124DC2162022A0012D2AB /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE124D9216201B30012D2AB /* AudioKit.framework */; };
+		CCE124DD216202350012D2AB /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE124D9216201B30012D2AB /* AudioKit.framework */; };
+		CCE124DE216202350012D2AB /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CCE124D9216201B30012D2AB /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CCE124E12162023C0012D2AB /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7EB6E4215F281B006713B5 /* AudioKit.framework */; };
+		CCE124E22162023C0012D2AB /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC7EB6E4215F281B006713B5 /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CCF70E45216B258000958414 /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF70E44216B258000958414 /* SearchResponse.swift */; };
+		CCF70E46216B258000958414 /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF70E44216B258000958414 /* SearchResponse.swift */; };
+		CCF70E4A216B2D5400958414 /* AlbumDualItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF70E49216B2D5400958414 /* AlbumDualItemController.swift */; };
+		CCF70E4C216B2E3D00958414 /* HeaderRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF70E4B216B2E3D00958414 /* HeaderRowController.swift */; };
+		CCF70E4E216B32F100958414 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF70E4D216B32F100958414 /* Artist.swift */; };
+		CCF70E4F216B32F100958414 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF70E4D216B32F100958414 /* Artist.swift */; };
+		CCF70E51216B3B9E00958414 /* Int+ShortText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF70E50216B3B9E00958414 /* Int+ShortText.swift */; };
+		CCF8D77A215B6D47001CDEFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF8D779215B6D47001CDEFD /* AppDelegate.swift */; };
+		CCF8D781215B6D48001CDEFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCF8D780215B6D48001CDEFD /* Assets.xcassets */; };
+		CCF8D784215B6D48001CDEFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCF8D782215B6D48001CDEFD /* LaunchScreen.storyboard */; };
+		CCF8D791215B6DCA001CDEFD /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCF8D78F215B6DCA001CDEFD /* Interface.storyboard */; };
+		CCF8D793215B6DCA001CDEFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCF8D792215B6DCA001CDEFD /* Assets.xcassets */; };
+		CCF8D79A215B6DCA001CDEFD /* Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CCF8D799215B6DCA001CDEFD /* Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CCF8D7A1215B6DCA001CDEFD /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF8D7A0215B6DCA001CDEFD /* ExtensionDelegate.swift */; };
+		CCF8D7A3215B6DCA001CDEFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCF8D7A2215B6DCA001CDEFD /* Assets.xcassets */; };
+		CCF8D7A7215B6DCA001CDEFD /* Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CCF8D78D215B6DCA001CDEFD /* Watch.app */; };
+		CCF940B1218F682700F65AAF /* DownloadPlaylistInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF940B0218F682700F65AAF /* DownloadPlaylistInterfaceController.swift */; };
+		CCF940B4218F6D7200F65AAF /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF940B3218F6D7200F65AAF /* UserPreferences.swift */; };
+		CCF940B7218F72CB00F65AAF /* ArtistDetailInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF940B6218F72CB00F65AAF /* ArtistDetailInterfaceController.swift */; };
+		CCF940B9218F7A7300F65AAF /* SimplifiedTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF940B8218F7A7300F65AAF /* SimplifiedTrack.swift */; };
+		CCF940BA218F7A7300F65AAF /* SimplifiedTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF940B8218F7A7300F65AAF /* SimplifiedTrack.swift */; };
+		CCF940BC218F85A300F65AAF /* DownloadsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF940BB218F85A300F65AAF /* DownloadsInterfaceController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC7EB707215F2935006713B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCF8D76E215B6D47001CDEFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC7EB701215F2935006713B5;
+			remoteInfo = SpotifyServices;
+		};
+		CC7EB71D215F29F7006713B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCF8D76E215B6D47001CDEFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC7EB710215F299F006713B5;
+			remoteInfo = "SpotifyServices watchOS";
+		};
+		CC7EB76A215F4EBB006713B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCF8D76E215B6D47001CDEFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC7EB764215F4EBB006713B5;
+			remoteInfo = Ogg;
+		};
+		CC7EB790215F51E9006713B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCF8D76E215B6D47001CDEFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC7EB773215F4F23006713B5;
+			remoteInfo = "Ogg watchOS";
+		};
+		CC7EB79D215F5589006713B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCF8D76E215B6D47001CDEFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC7EB797215F5589006713B5;
+			remoteInfo = Vorbis;
+		};
+		CCE124C12161F73E0012D2AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCF8D76E215B6D47001CDEFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC7EB7A5215F55D1006713B5;
+			remoteInfo = "Vorbis watchOS";
+		};
+		CCE124DF216202350012D2AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCF8D76E215B6D47001CDEFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCE124C7216201B30012D2AB;
+			remoteInfo = "AudioKit watchOS";
+		};
+		CCE124E32162023C0012D2AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCF8D76E215B6D47001CDEFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC7EB6E3215F281B006713B5;
+			remoteInfo = "AudioKit iOS";
+		};
+		CCF8D79B215B6DCA001CDEFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCF8D76E215B6D47001CDEFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCF8D798215B6DCA001CDEFD;
+			remoteInfo = "Watch Extension";
+		};
+		CCF8D7A5215B6DCA001CDEFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCF8D76E215B6D47001CDEFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCF8D78C215B6DCA001CDEFD;
+			remoteInfo = Watch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CC7EB6DE215F27E1006713B5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CCE124DE216202350012D2AB /* AudioKit.framework in Embed Frameworks */,
+				CC7EB78F215F51E9006713B5 /* Ogg.framework in Embed Frameworks */,
+				CCE124C02161F73E0012D2AB /* Vorbis.framework in Embed Frameworks */,
+				CC7EB71C215F29F7006713B5 /* SpotifyServices.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7EB70E215F2935006713B5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CCE124E22162023C0012D2AB /* AudioKit.framework in Embed Frameworks */,
+				CC7EB76D215F4EBB006713B5 /* Ogg.framework in Embed Frameworks */,
+				CC7EB70A215F2935006713B5 /* SpotifyServices.framework in Embed Frameworks */,
+				CC7EB7A0215F5589006713B5 /* Vorbis.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCF8D7AB215B6DCA001CDEFD /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CCF8D79A215B6DCA001CDEFD /* Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCF8D7AF215B6DCA001CDEFD /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				CCF8D7A7215B6DCA001CDEFD /* Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CC10489C217340E600DBD8F0 /* NowPlayingInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingInterfaceController.swift; sourceTree = "<group>"; };
+		CC2DADD4216ADB7800F5416B /* HomeInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInterfaceController.swift; sourceTree = "<group>"; };
+		CC2DADD6216AF6ED00F5416B /* SpotifyServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyServices.swift; sourceTree = "<group>"; };
+		CC31AD7F218FBEAF002240A7 /* DownloadTaskRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadTaskRowController.swift; sourceTree = "<group>"; };
+		CC31AD99218FD135002240A7 /* StorageSettingsInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageSettingsInterfaceController.swift; sourceTree = "<group>"; };
+		CC32AB65218E7BB7000BF09D /* AnyPlaylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyPlaylist.swift; sourceTree = "<group>"; };
+		CC3538362186CF0500D8358C /* CompanionCommunicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanionCommunicator.swift; sourceTree = "<group>"; };
+		CC3538392186D17600D8358C /* AppSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSession.swift; sourceTree = "<group>"; };
+		CC35383B2186D30500D8358C /* ConfigurationServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationServices.swift; sourceTree = "<group>"; };
+		CC3538492186D97000D8358C /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		CC35384E2186DA2B00D8358C /* SpotifyAuthorizationContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyAuthorizationContext.swift; sourceTree = "<group>"; };
+		CC35385C2186DFAD00D8358C /* DefaultServiceConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultServiceConfiguration.swift; sourceTree = "<group>"; };
+		CC35385F2186E1A200D8358C /* TokenRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenRequestViewController.swift; sourceTree = "<group>"; };
+		CC3538612186E1F500D8358C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		CC3538632186E27F00D8358C /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationViewController.swift; sourceTree = "<group>"; };
+		CC3538662186E6C100D8358C /* TokenSyncViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenSyncViewController.swift; sourceTree = "<group>"; };
+		CC3538692186E7BF00D8358C /* WatchCommunicationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchCommunicationManager.swift; sourceTree = "<group>"; };
+		CC35386B2186EBD200D8358C /* WatchMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchMessage.swift; sourceTree = "<group>"; };
+		CC35386E2186EFAA00D8358C /* SetupCompleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupCompleteViewController.swift; sourceTree = "<group>"; };
+		CC3538712186F2DA00D8358C /* IllegibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IllegibleViewController.swift; sourceTree = "<group>"; };
+		CC36C56921604EEF002DF052 /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		CC39F2032179B7790074A20C /* UIImage+Resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
+		CC39FDF4218523AA00FE94C4 /* LocalStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageManager.swift; sourceTree = "<group>"; };
+		CC39FDF7218523CD00FE94C4 /* LocalStorageClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageClass.swift; sourceTree = "<group>"; };
+		CC39FDFA218523EF00FE94C4 /* LocalStorageItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageItem.swift; sourceTree = "<group>"; };
+		CC39FDFD2185241F00FE94C4 /* AudioFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioFile.swift; sourceTree = "<group>"; };
+		CC3D2F9D218E4F08009FCF44 /* ArtworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkService.swift; sourceTree = "<group>"; };
+		CC3D2FA1218E5748009FCF44 /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
+		CC52EF092172BD5C00CA225B /* TrackFileInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackFileInfo.swift; sourceTree = "<group>"; };
+		CC52EF0C2172C01500CA225B /* FileStorageResolveResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileStorageResolveResponse.swift; sourceTree = "<group>"; };
+		CC688F0821867D8D006D7277 /* Array+ImageSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+ImageSize.swift"; sourceTree = "<group>"; };
+		CC688F0B2186815C006D7277 /* Array+SpotifyImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+SpotifyImage.swift"; sourceTree = "<group>"; };
+		CC7A4B42218EC30400BE33B1 /* StepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepViewController.swift; sourceTree = "<group>"; };
+		CC7A4B45218EC70C00BE33B1 /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
+		CC7A4B47218EC74400BE33B1 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		CC7A4B55218ECB4800BE33B1 /* HelloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloViewController.swift; sourceTree = "<group>"; };
+		CC7A4B57218ECC6D00BE33B1 /* SessionLoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionLoadingViewController.swift; sourceTree = "<group>"; };
+		CC7A4B59218ED10700BE33B1 /* MessageInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInterfaceController.swift; sourceTree = "<group>"; };
+		CC7EB6E4215F281B006713B5 /* AudioKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AudioKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC7EB6E6215F281B006713B5 /* AudioKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioKit.h; sourceTree = "<group>"; };
+		CC7EB6E7215F281B006713B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC7EB6F1215F2831006713B5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.1.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		CC7EB6F3215F2859006713B5 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.1.sdk/System/Library/Frameworks/CoreAudio.framework; sourceTree = DEVELOPER_DIR; };
+		CC7EB6F5215F2867006713B5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CC7EB6F7215F2894006713B5 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.1.sdk/System/Library/Frameworks/MediaPlayer.framework; sourceTree = DEVELOPER_DIR; };
+		CC7EB6FA215F28C4006713B5 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		CC7EB702215F2935006713B5 /* SpotifyServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpotifyServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC7EB704215F2935006713B5 /* SpotifyServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpotifyServices.h; sourceTree = "<group>"; };
+		CC7EB705215F2935006713B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC7EB719215F299F006713B5 /* SpotifyServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpotifyServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC7EB720215F2A1D006713B5 /* SpotifyServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyServiceProvider.swift; sourceTree = "<group>"; };
+		CC7EB726215F2A74006713B5 /* AudioTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTrack.swift; sourceTree = "<group>"; };
+		CC7EB729215F2BE6006713B5 /* AudioTrackMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTrackMetadata.swift; sourceTree = "<group>"; };
+		CC7EB72C215F332B006713B5 /* AudioSessionNotificationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSessionNotificationHandler.swift; sourceTree = "<group>"; };
+		CC7EB72E215F3DE5006713B5 /* AudioSessionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSessionState.swift; sourceTree = "<group>"; };
+		CC7EB765215F4EBB006713B5 /* Ogg.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Ogg.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC7EB768215F4EBB006713B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC7EB77C215F4F23006713B5 /* Ogg.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Ogg.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC7EB77E215F4F6F006713B5 /* bitwise.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bitwise.c; sourceTree = "<group>"; };
+		CC7EB77F215F4F6F006713B5 /* framing.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = framing.c; sourceTree = "<group>"; };
+		CC7EB786215F4F87006713B5 /* os_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = os_types.h; sourceTree = "<group>"; };
+		CC7EB78B215F50A3006713B5 /* ogg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ogg.h; sourceTree = "<group>"; };
+		CC7EB792215F5476006713B5 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		CC7EB798215F5589006713B5 /* Vorbis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vorbis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC7EB79B215F5589006713B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC7EB7AD215F55D1006713B5 /* Vorbis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vorbis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC7EB7B1215F561E006713B5 /* vorbisfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vorbisfile.h; sourceTree = "<group>"; };
+		CC7EB7B2215F561E006713B5 /* vorbisenc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vorbisenc.h; sourceTree = "<group>"; };
+		CC7EB7B3215F561E006713B5 /* codec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = codec.h; sourceTree = "<group>"; };
+		CC7EB7BA215F5666006713B5 /* sharedbook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sharedbook.c; sourceTree = "<group>"; };
+		CC7EB7BB215F5666006713B5 /* smallft.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = smallft.c; sourceTree = "<group>"; };
+		CC7EB7BD215F5666006713B5 /* misc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = misc.h; sourceTree = "<group>"; };
+		CC7EB7BF215F5666006713B5 /* lpc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lpc.c; sourceTree = "<group>"; };
+		CC7EB7C0215F5666006713B5 /* mdct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mdct.h; sourceTree = "<group>"; };
+		CC7EB7C1215F5666006713B5 /* codebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = codebook.h; sourceTree = "<group>"; };
+		CC7EB7C2215F5666006713B5 /* os.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = os.h; sourceTree = "<group>"; };
+		CC7EB7C3215F5666006713B5 /* lookup.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lookup.c; sourceTree = "<group>"; };
+		CC7EB7C5215F5666006713B5 /* psych_44.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = psych_44.h; sourceTree = "<group>"; };
+		CC7EB7C6215F5666006713B5 /* setup_11.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = setup_11.h; sourceTree = "<group>"; };
+		CC7EB7C7215F5666006713B5 /* setup_44u.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = setup_44u.h; sourceTree = "<group>"; };
+		CC7EB7C8215F5666006713B5 /* setup_8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = setup_8.h; sourceTree = "<group>"; };
+		CC7EB7C9215F5666006713B5 /* residue_8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = residue_8.h; sourceTree = "<group>"; };
+		CC7EB7CA215F5666006713B5 /* residue_44p51.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = residue_44p51.h; sourceTree = "<group>"; };
+		CC7EB7CB215F5666006713B5 /* residue_44.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = residue_44.h; sourceTree = "<group>"; };
+		CC7EB7CC215F5666006713B5 /* setup_16.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = setup_16.h; sourceTree = "<group>"; };
+		CC7EB7CD215F5666006713B5 /* setup_22.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = setup_22.h; sourceTree = "<group>"; };
+		CC7EB7CF215F5666006713B5 /* psych_16.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = psych_16.h; sourceTree = "<group>"; };
+		CC7EB7D0215F5666006713B5 /* psych_8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = psych_8.h; sourceTree = "<group>"; };
+		CC7EB7D1215F5666006713B5 /* setup_44p51.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = setup_44p51.h; sourceTree = "<group>"; };
+		CC7EB7D2215F5666006713B5 /* floor_all.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = floor_all.h; sourceTree = "<group>"; };
+		CC7EB7D3215F5666006713B5 /* setup_32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = setup_32.h; sourceTree = "<group>"; };
+		CC7EB7D4215F5666006713B5 /* residue_44u.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = residue_44u.h; sourceTree = "<group>"; };
+		CC7EB7D5215F5666006713B5 /* setup_44.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = setup_44.h; sourceTree = "<group>"; };
+		CC7EB7D6215F5666006713B5 /* residue_16.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = residue_16.h; sourceTree = "<group>"; };
+		CC7EB7D7215F5666006713B5 /* psych_11.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = psych_11.h; sourceTree = "<group>"; };
+		CC7EB7D8215F5666006713B5 /* setup_X.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = setup_X.h; sourceTree = "<group>"; };
+		CC7EB7DA215F5666006713B5 /* vorbisfile.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vorbisfile.c; sourceTree = "<group>"; };
+		CC7EB7DB215F5667006713B5 /* bitrate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bitrate.h; sourceTree = "<group>"; };
+		CC7EB7DC215F5667006713B5 /* window.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = window.c; sourceTree = "<group>"; };
+		CC7EB7DD215F5667006713B5 /* window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = window.h; sourceTree = "<group>"; };
+		CC7EB7DE215F5667006713B5 /* floor1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = floor1.c; sourceTree = "<group>"; };
+		CC7EB7DF215F5667006713B5 /* analysis.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = analysis.c; sourceTree = "<group>"; };
+		CC7EB7E0215F5667006713B5 /* highlevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = highlevel.h; sourceTree = "<group>"; };
+		CC7EB7E1215F5667006713B5 /* psy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = psy.c; sourceTree = "<group>"; };
+		CC7EB7E2215F5667006713B5 /* codebook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = codebook.c; sourceTree = "<group>"; };
+		CC7EB7E3215F5667006713B5 /* lookup_data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lookup_data.h; sourceTree = "<group>"; };
+		CC7EB7E4215F5667006713B5 /* block.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = block.c; sourceTree = "<group>"; };
+		CC7EB7E6215F5667006713B5 /* smallft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smallft.h; sourceTree = "<group>"; };
+		CC7EB7E7215F5667006713B5 /* lookup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lookup.h; sourceTree = "<group>"; };
+		CC7EB7E9215F5667006713B5 /* vorbisenc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vorbisenc.c; sourceTree = "<group>"; };
+		CC7EB7EA215F5667006713B5 /* lsp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lsp.c; sourceTree = "<group>"; };
+		CC7EB7EB215F5667006713B5 /* envelope.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = envelope.c; sourceTree = "<group>"; };
+		CC7EB7EC215F5667006713B5 /* lsp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lsp.h; sourceTree = "<group>"; };
+		CC7EB7ED215F5667006713B5 /* envelope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = envelope.h; sourceTree = "<group>"; };
+		CC7EB7EE215F5667006713B5 /* synthesis.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = synthesis.c; sourceTree = "<group>"; };
+		CC7EB7EF215F5667006713B5 /* info.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = info.c; sourceTree = "<group>"; };
+		CC7EB7F0215F5667006713B5 /* lpc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lpc.h; sourceTree = "<group>"; };
+		CC7EB7F1215F5667006713B5 /* codec_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = codec_internal.h; sourceTree = "<group>"; };
+		CC7EB7F2215F5667006713B5 /* registry.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = registry.c; sourceTree = "<group>"; };
+		CC7EB7F3215F5667006713B5 /* floor0.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = floor0.c; sourceTree = "<group>"; };
+		CC7EB7F4215F5667006713B5 /* bitrate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bitrate.c; sourceTree = "<group>"; };
+		CC7EB7F5215F5668006713B5 /* masking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = masking.h; sourceTree = "<group>"; };
+		CC7EB7F6215F5668006713B5 /* backends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = backends.h; sourceTree = "<group>"; };
+		CC7EB7F7215F5668006713B5 /* mapping0.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mapping0.c; sourceTree = "<group>"; };
+		CC7EB7F8215F5668006713B5 /* res0.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = res0.c; sourceTree = "<group>"; };
+		CC7EB7F9215F5668006713B5 /* scales.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scales.h; sourceTree = "<group>"; };
+		CC7EB7FA215F5668006713B5 /* mdct.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mdct.c; sourceTree = "<group>"; };
+		CC7EB7FB215F5668006713B5 /* psy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = psy.h; sourceTree = "<group>"; };
+		CC7EB800215F5668006713B5 /* res_books_uncoupled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = res_books_uncoupled.h; sourceTree = "<group>"; };
+		CC7EB803215F5668006713B5 /* res_books_51.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = res_books_51.h; sourceTree = "<group>"; };
+		CC7EB804215F5668006713B5 /* res_books_stereo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = res_books_stereo.h; sourceTree = "<group>"; };
+		CC7EB80A215F5668006713B5 /* floor_books.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = floor_books.h; sourceTree = "<group>"; };
+		CC7EB80C215F5668006713B5 /* registry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = registry.h; sourceTree = "<group>"; };
+		CC7EB8AB215F5B7D006713B5 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		CC8E563F218FD5BC00FC2187 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		CC9339A82172DD3F00DF104C /* SpotifyPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyPlayer.swift; sourceTree = "<group>"; };
+		CC997DAB21798EDB00306B52 /* AudioPlayerEventProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerEventProcessor.swift; sourceTree = "<group>"; };
+		CC997DAE21798F9600306B52 /* PlaybackState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackState.swift; sourceTree = "<group>"; };
+		CC997DB121799E6400306B52 /* NowPlayingItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingItemController.swift; sourceTree = "<group>"; };
+		CC9E3DCD218FFDDA00FCE07C /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		CC9E3DCF218FFFCE00FCE07C /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		CC9E3DD2219000A200FCE07C /* Listable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Listable.swift; sourceTree = "<group>"; };
+		CC9E3DD521900B9600FCE07C /* Acknowledgement.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Acknowledgement.html; sourceTree = "<group>"; };
+		CC9E3DD721900BE200FCE07C /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		CC9E3DD92190158400FCE07C /* Privacy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Privacy.html; sourceTree = "<group>"; };
+		CCBF4EF221869C670063D41A /* SettingsInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInterfaceController.swift; sourceTree = "<group>"; };
+		CCC1244A216998BD008EC269 /* KeychainServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainServices.swift; sourceTree = "<group>"; };
+		CCC1244D216998C6008EC269 /* AudioDecryptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioDecryptor.swift; sourceTree = "<group>"; };
+		CCC42D45216AF85700FBA35A /* InitializationInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitializationInterfaceController.swift; sourceTree = "<group>"; };
+		CCC42D48216AFB8A00FBA35A /* PlaylistOverviewInterfaceController.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = PlaylistOverviewInterfaceController.swift; sourceTree = "<group>"; };
+		CCC42D4A216B09E800FBA35A /* ExploreInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreInterfaceController.swift; sourceTree = "<group>"; };
+		CCC42D50216B127000FBA35A /* PlaylistDualItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistDualItemController.swift; sourceTree = "<group>"; };
+		CCC42D54216B138100FBA35A /* CategoryRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRowController.swift; sourceTree = "<group>"; };
+		CCC42D57216B150500FBA35A /* Array+Chunks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Chunks.swift"; sourceTree = "<group>"; };
+		CCC42D59216B16B700FBA35A /* UIImage+Resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
+		CCC42D5B216B1EF100FBA35A /* CategoryInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryInterfaceController.swift; sourceTree = "<group>"; };
+		CCC42D5D216B22C000FBA35A /* SearchInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInterfaceController.swift; sourceTree = "<group>"; };
+		CCC42D61216B232600FBA35A /* SearchResultRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultRowController.swift; sourceTree = "<group>"; };
+		CCCEDEB82161BA3A00BB7014 /* ServiceConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceConfiguration.swift; sourceTree = "<group>"; };
+		CCCEDEBE2161BCDB00BB7014 /* ServiceEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceEndpoint.swift; sourceTree = "<group>"; };
+		CCCEDEC22161BE7B00BB7014 /* RefreshTokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTokenResponse.swift; sourceTree = "<group>"; };
+		CCCEDEC52161C13000BB7014 /* UserSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSession.swift; sourceTree = "<group>"; };
+		CCCEDEC82161C1F000BB7014 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		CCCEDECB2161C28C00BB7014 /* SpotifyServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyServiceError.swift; sourceTree = "<group>"; };
+		CCCEDECE2161C3DA00BB7014 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CCCEDED12161C43C00BB7014 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		CCCEDED52161C76800BB7014 /* URLSession+JSONRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+JSONRequest.swift"; sourceTree = "<group>"; };
+		CCCEDEDB2161C99200BB7014 /* Paginated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paginated.swift; sourceTree = "<group>"; };
+		CCCEDEDE2161CA5500BB7014 /* SimplifiedPlaylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplifiedPlaylist.swift; sourceTree = "<group>"; };
+		CCCEDEE42161CEE400BB7014 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		CCCEDEE72161D04300BB7014 /* SimplifiedAlbum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplifiedAlbum.swift; sourceTree = "<group>"; };
+		CCCEDEEA2161D07300BB7014 /* Album+Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Album+Enum.swift"; sourceTree = "<group>"; };
+		CCCEDEED2161D15400BB7014 /* SimplifiedArtist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplifiedArtist.swift; sourceTree = "<group>"; };
+		CCCEDEF42161D26000BB7014 /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		CCCEDEF72161D27200BB7014 /* PlaylistTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistTrack.swift; sourceTree = "<group>"; };
+		CCCEDEFA2161D2DF00BB7014 /* PublicUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicUser.swift; sourceTree = "<group>"; };
+		CCCEDEFD2161D3B800BB7014 /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
+		CCCEDF002161D7A100BB7014 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		CCCEDF082161D95700BB7014 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		CCCEDF0B2161D9DA00BB7014 /* SavedTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedTrack.swift; sourceTree = "<group>"; };
+		CCCEDF0E2161DA3600BB7014 /* SavedAlbum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedAlbum.swift; sourceTree = "<group>"; };
+		CCCEDF112161DB9900BB7014 /* CategoriesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesResponse.swift; sourceTree = "<group>"; };
+		CCCEDF142161DD1600BB7014 /* CategoryPlaylistsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPlaylistsResponse.swift; sourceTree = "<group>"; };
+		CCCEDF172161DE4100BB7014 /* FeaturedPlaylistsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedPlaylistsResponse.swift; sourceTree = "<group>"; };
+		CCCEDF1A2161E02300BB7014 /* NewReleasesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReleasesResponse.swift; sourceTree = "<group>"; };
+		CCD86F822179890B00CA6FEE /* DebugServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugServices.swift; sourceTree = "<group>"; };
+		CCE124B52161F4080012D2AB /* PlaybackService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackService.swift; sourceTree = "<group>"; };
+		CCE124B82161F50B0012D2AB /* SpotifyAudioTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyAudioTrack.swift; sourceTree = "<group>"; };
+		CCE124C32161F7840012D2AB /* VorbisDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VorbisDecoder.swift; sourceTree = "<group>"; };
+		CCE124D9216201B30012D2AB /* AudioKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AudioKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCF70E44216B258000958414 /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
+		CCF70E49216B2D5400958414 /* AlbumDualItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDualItemController.swift; sourceTree = "<group>"; };
+		CCF70E4B216B2E3D00958414 /* HeaderRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderRowController.swift; sourceTree = "<group>"; };
+		CCF70E4D216B32F100958414 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		CCF70E50216B3B9E00958414 /* Int+ShortText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+ShortText.swift"; sourceTree = "<group>"; };
+		CCF8D776215B6D47001CDEFD /* Apollo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Apollo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCF8D779215B6D47001CDEFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CCF8D780215B6D48001CDEFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CCF8D783215B6D48001CDEFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CCF8D785215B6D48001CDEFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCF8D78D215B6DCA001CDEFD /* Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Watch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCF8D790215B6DCA001CDEFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		CCF8D792215B6DCA001CDEFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CCF8D794215B6DCA001CDEFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCF8D799215B6DCA001CDEFD /* Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCF8D7A0215B6DCA001CDEFD /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		CCF8D7A2215B6DCA001CDEFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CCF8D7A4215B6DCA001CDEFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCF940B0218F682700F65AAF /* DownloadPlaylistInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadPlaylistInterfaceController.swift; sourceTree = "<group>"; };
+		CCF940B3218F6D7200F65AAF /* UserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
+		CCF940B6218F72CB00F65AAF /* ArtistDetailInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistDetailInterfaceController.swift; sourceTree = "<group>"; };
+		CCF940B8218F7A7300F65AAF /* SimplifiedTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplifiedTrack.swift; sourceTree = "<group>"; };
+		CCF940BB218F85A300F65AAF /* DownloadsInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsInterfaceController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC7EB6E1215F281B006713B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC7EB6F8215F2894006713B5 /* MediaPlayer.framework in Frameworks */,
+				CC7EB6F6215F2867006713B5 /* Foundation.framework in Frameworks */,
+				CC7EB6F4215F2859006713B5 /* CoreAudio.framework in Frameworks */,
+				CC7EB6F2215F2831006713B5 /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7EB6FF215F2935006713B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCE124DB216202200012D2AB /* AudioKit.framework in Frameworks */,
+				CCE124BD2161F72C0012D2AB /* Vorbis.framework in Frameworks */,
+				CCE124BB2161F7230012D2AB /* Ogg.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7EB714215F299F006713B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCE124DC2162022A0012D2AB /* AudioKit.framework in Frameworks */,
+				CCE124BE2161F7300012D2AB /* Vorbis.framework in Frameworks */,
+				CCE124BC2161F7270012D2AB /* Ogg.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7EB762215F4EBB006713B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7EB777215F4F23006713B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7EB795215F5589006713B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC7EB8A9215F598C006713B5 /* Ogg.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7EB7A8215F55D1006713B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC7EB8AA215F5990006713B5 /* Ogg.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCE124D0216201B30012D2AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCE124D1216201B30012D2AB /* MediaPlayer.framework in Frameworks */,
+				CCE124D2216201B30012D2AB /* Foundation.framework in Frameworks */,
+				CCE124D3216201B30012D2AB /* CoreAudio.framework in Frameworks */,
+				CCE124D4216201B30012D2AB /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCF8D773215B6D47001CDEFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCE124E12162023C0012D2AB /* AudioKit.framework in Frameworks */,
+				CC7EB76C215F4EBB006713B5 /* Ogg.framework in Frameworks */,
+				CC7EB709215F2935006713B5 /* SpotifyServices.framework in Frameworks */,
+				CC7EB79F215F5589006713B5 /* Vorbis.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCF8D796215B6DCA001CDEFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCE124DD216202350012D2AB /* AudioKit.framework in Frameworks */,
+				CC7EB78E215F51E9006713B5 /* Ogg.framework in Frameworks */,
+				CCE124BF2161F73E0012D2AB /* Vorbis.framework in Frameworks */,
+				CC7EB71B215F29F7006713B5 /* SpotifyServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC3538352186BE4A00D8358C /* App Session */ = {
+			isa = PBXGroup;
+			children = (
+				CC3538392186D17600D8358C /* AppSession.swift */,
+				CC3538362186CF0500D8358C /* CompanionCommunicator.swift */,
+			);
+			path = "App Session";
+			sourceTree = "<group>";
+		};
+		CC35384C2186D9F700D8358C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CC3538612186E1F500D8358C /* BaseViewController.swift */,
+				CC7A4B42218EC30400BE33B1 /* StepViewController.swift */,
+				CC3538632186E27F00D8358C /* BaseNavigationViewController.swift */,
+				CC3538492186D97000D8358C /* WelcomeViewController.swift */,
+				CC7A4B57218ECC6D00BE33B1 /* SessionLoadingViewController.swift */,
+				CC7A4B55218ECB4800BE33B1 /* HelloViewController.swift */,
+				CC35385F2186E1A200D8358C /* TokenRequestViewController.swift */,
+				CC3538712186F2DA00D8358C /* IllegibleViewController.swift */,
+				CC3538662186E6C100D8358C /* TokenSyncViewController.swift */,
+				CC35386E2186EFAA00D8358C /* SetupCompleteViewController.swift */,
+				CC9E3DCD218FFDDA00FCE07C /* AboutViewController.swift */,
+				CC9E3DD721900BE200FCE07C /* WebViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		CC35384D2186DA0000D8358C /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				CC35384E2186DA2B00D8358C /* SpotifyAuthorizationContext.swift */,
+				CC35385C2186DFAD00D8358C /* DefaultServiceConfiguration.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		CC3538682186E79D00D8358C /* Communication */ = {
+			isa = PBXGroup;
+			children = (
+				CC3538692186E7BF00D8358C /* WatchCommunicationManager.swift */,
+			);
+			path = Communication;
+			sourceTree = "<group>";
+		};
+		CC3538702186F22700D8358C /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				CC7A4B47218EC74400BE33B1 /* Color.swift */,
+				CC2DADD6216AF6ED00F5416B /* SpotifyServices.swift */,
+				CC35383B2186D30500D8358C /* ConfigurationServices.swift */,
+				CC35386B2186EBD200D8358C /* WatchMessage.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		CC39FDF32185239600FE94C4 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				CC39FDF4218523AA00FE94C4 /* LocalStorageManager.swift */,
+				CC39FDF7218523CD00FE94C4 /* LocalStorageClass.swift */,
+				CC39FDFA218523EF00FE94C4 /* LocalStorageItem.swift */,
+				CC39FDFD2185241F00FE94C4 /* AudioFile.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		CC3D2F9C218E4EEE009FCF44 /* Artwork */ = {
+			isa = PBXGroup;
+			children = (
+				CC3D2F9D218E4F08009FCF44 /* ArtworkService.swift */,
+			);
+			path = Artwork;
+			sourceTree = "<group>";
+		};
+		CC3D2FA0218E572D009FCF44 /* Download */ = {
+			isa = PBXGroup;
+			children = (
+				CC3D2FA1218E5748009FCF44 /* DownloadManager.swift */,
+			);
+			path = Download;
+			sourceTree = "<group>";
+		};
+		CC52EF082172BD4B00CA225B /* Playback */ = {
+			isa = PBXGroup;
+			children = (
+				CC52EF092172BD5C00CA225B /* TrackFileInfo.swift */,
+				CC52EF0C2172C01500CA225B /* FileStorageResolveResponse.swift */,
+			);
+			path = Playback;
+			sourceTree = "<group>";
+		};
+		CC7A4B44218EC6FD00BE33B1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CC9E3DCF218FFFCE00FCE07C /* DetailTableViewCell.swift */,
+				CC7A4B45218EC70C00BE33B1 /* ActionButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CC7EB6E5215F281B006713B5 /* AudioKit */ = {
+			isa = PBXGroup;
+			children = (
+				CC7EB6F9215F28AE006713B5 /* Sources */,
+				CC7EB6FC215F28E7006713B5 /* Supporting Files */,
+			);
+			path = AudioKit;
+			sourceTree = "<group>";
+		};
+		CC7EB6F0215F2831006713B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC7EB6F7215F2894006713B5 /* MediaPlayer.framework */,
+				CC7EB6F5215F2867006713B5 /* Foundation.framework */,
+				CC7EB6F3215F2859006713B5 /* CoreAudio.framework */,
+				CC7EB6F1215F2831006713B5 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC7EB6F9215F28AE006713B5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				CC7EB72B215F32F7006713B5 /* Internal */,
+				CC7EB728215F2BD9006713B5 /* Structs */,
+				CC7EB723215F2A53006713B5 /* Protocols */,
+				CC7EB6FA215F28C4006713B5 /* AudioPlayer.swift */,
+				CC997DAE21798F9600306B52 /* PlaybackState.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		CC7EB6FC215F28E7006713B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC7EB6E6215F281B006713B5 /* AudioKit.h */,
+				CC7EB6E7215F281B006713B5 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC7EB703215F2935006713B5 /* SpotifyServices */ = {
+			isa = PBXGroup;
+			children = (
+				CC7EB71F215F29FD006713B5 /* Sources */,
+				CC7EB70F215F293E006713B5 /* Supporting Files */,
+			);
+			path = SpotifyServices;
+			sourceTree = "<group>";
+		};
+		CC7EB70F215F293E006713B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC7EB704215F2935006713B5 /* SpotifyServices.h */,
+				CC7EB705215F2935006713B5 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC7EB71F215F29FD006713B5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				CC3D2F9C218E4EEE009FCF44 /* Artwork */,
+				CC3D2FA0218E572D009FCF44 /* Download */,
+				CC39FDF32185239600FE94C4 /* Storage */,
+				CCC12449216998A8008EC269 /* Utils */,
+				CCE124B42161F3EF0012D2AB /* Playback */,
+				CCCEDED42161C75400BB7014 /* Request */,
+				CCCEDEC12161BE6800BB7014 /* Struct */,
+				CCCEDEB82161BA3A00BB7014 /* ServiceConfiguration.swift */,
+				CCCEDEBE2161BCDB00BB7014 /* ServiceEndpoint.swift */,
+				CC7EB720215F2A1D006713B5 /* SpotifyServiceProvider.swift */,
+				CC36C56921604EEF002DF052 /* Logging.swift */,
+				CCCEDECB2161C28C00BB7014 /* SpotifyServiceError.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		CC7EB723215F2A53006713B5 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CC7EB726215F2A74006713B5 /* AudioTrack.swift */,
+				CC997DAB21798EDB00306B52 /* AudioPlayerEventProcessor.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CC7EB728215F2BD9006713B5 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				CC7EB729215F2BE6006713B5 /* AudioTrackMetadata.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		CC7EB72B215F32F7006713B5 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				CC7EB72C215F332B006713B5 /* AudioSessionNotificationHandler.swift */,
+				CC7EB72E215F3DE5006713B5 /* AudioSessionState.swift */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		CC7EB766215F4EBB006713B5 /* Ogg */ = {
+			isa = PBXGroup;
+			children = (
+				CC7EB784215F4F7F006713B5 /* Headers */,
+				CC7EB771215F4EE5006713B5 /* Sources */,
+				CC7EB772215F4F0B006713B5 /* Supporting Files */,
+			);
+			path = Ogg;
+			sourceTree = "<group>";
+		};
+		CC7EB771215F4EE5006713B5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				CC7EB77E215F4F6F006713B5 /* bitwise.c */,
+				CC7EB77F215F4F6F006713B5 /* framing.c */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		CC7EB772215F4F0B006713B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC7EB792215F5476006713B5 /* module.modulemap */,
+				CC7EB768215F4EBB006713B5 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC7EB784215F4F7F006713B5 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				CC7EB78B215F50A3006713B5 /* ogg.h */,
+				CC7EB786215F4F87006713B5 /* os_types.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		CC7EB799215F5589006713B5 /* Vorbis */ = {
+			isa = PBXGroup;
+			children = (
+				CC7EB7AF215F5601006713B5 /* Headers */,
+				CC7EB7B0215F5609006713B5 /* Sources */,
+				CC7EB7A4215F5599006713B5 /* Supporting Files */,
+			);
+			path = Vorbis;
+			sourceTree = "<group>";
+		};
+		CC7EB7A4215F5599006713B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC7EB8AB215F5B7D006713B5 /* module.modulemap */,
+				CC7EB79B215F5589006713B5 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC7EB7AF215F5601006713B5 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				CC7EB7B3215F561E006713B5 /* codec.h */,
+				CC7EB7B2215F561E006713B5 /* vorbisenc.h */,
+				CC7EB7B1215F561E006713B5 /* vorbisfile.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		CC7EB7B0215F5609006713B5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				CC7EB7DF215F5667006713B5 /* analysis.c */,
+				CC7EB7F6215F5668006713B5 /* backends.h */,
+				CC7EB7F4215F5667006713B5 /* bitrate.c */,
+				CC7EB7DB215F5667006713B5 /* bitrate.h */,
+				CC7EB7E4215F5667006713B5 /* block.c */,
+				CC7EB7FC215F5668006713B5 /* books */,
+				CC7EB7E2215F5667006713B5 /* codebook.c */,
+				CC7EB7C1215F5666006713B5 /* codebook.h */,
+				CC7EB7F1215F5667006713B5 /* codec_internal.h */,
+				CC7EB7EB215F5667006713B5 /* envelope.c */,
+				CC7EB7ED215F5667006713B5 /* envelope.h */,
+				CC7EB7F3215F5667006713B5 /* floor0.c */,
+				CC7EB7DE215F5667006713B5 /* floor1.c */,
+				CC7EB7E0215F5667006713B5 /* highlevel.h */,
+				CC7EB7EF215F5667006713B5 /* info.c */,
+				CC7EB7E3215F5667006713B5 /* lookup_data.h */,
+				CC7EB7C3215F5666006713B5 /* lookup.c */,
+				CC7EB7E7215F5667006713B5 /* lookup.h */,
+				CC7EB7BF215F5666006713B5 /* lpc.c */,
+				CC7EB7F0215F5667006713B5 /* lpc.h */,
+				CC7EB7EA215F5667006713B5 /* lsp.c */,
+				CC7EB7EC215F5667006713B5 /* lsp.h */,
+				CC7EB7F7215F5668006713B5 /* mapping0.c */,
+				CC7EB7F5215F5668006713B5 /* masking.h */,
+				CC7EB7FA215F5668006713B5 /* mdct.c */,
+				CC7EB7C0215F5666006713B5 /* mdct.h */,
+				CC7EB7BD215F5666006713B5 /* misc.h */,
+				CC7EB7C4215F5666006713B5 /* modes */,
+				CC7EB7C2215F5666006713B5 /* os.h */,
+				CC7EB7E1215F5667006713B5 /* psy.c */,
+				CC7EB7FB215F5668006713B5 /* psy.h */,
+				CC7EB7F2215F5667006713B5 /* registry.c */,
+				CC7EB80C215F5668006713B5 /* registry.h */,
+				CC7EB7F8215F5668006713B5 /* res0.c */,
+				CC7EB7F9215F5668006713B5 /* scales.h */,
+				CC7EB7BA215F5666006713B5 /* sharedbook.c */,
+				CC7EB7BB215F5666006713B5 /* smallft.c */,
+				CC7EB7E6215F5667006713B5 /* smallft.h */,
+				CC7EB7EE215F5667006713B5 /* synthesis.c */,
+				CC7EB7E9215F5667006713B5 /* vorbisenc.c */,
+				CC7EB7DA215F5666006713B5 /* vorbisfile.c */,
+				CC7EB7DC215F5667006713B5 /* window.c */,
+				CC7EB7DD215F5667006713B5 /* window.h */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		CC7EB7C4215F5666006713B5 /* modes */ = {
+			isa = PBXGroup;
+			children = (
+				CC7EB7C5215F5666006713B5 /* psych_44.h */,
+				CC7EB7C6215F5666006713B5 /* setup_11.h */,
+				CC7EB7C7215F5666006713B5 /* setup_44u.h */,
+				CC7EB7C8215F5666006713B5 /* setup_8.h */,
+				CC7EB7C9215F5666006713B5 /* residue_8.h */,
+				CC7EB7CA215F5666006713B5 /* residue_44p51.h */,
+				CC7EB7CB215F5666006713B5 /* residue_44.h */,
+				CC7EB7CC215F5666006713B5 /* setup_16.h */,
+				CC7EB7CD215F5666006713B5 /* setup_22.h */,
+				CC7EB7CF215F5666006713B5 /* psych_16.h */,
+				CC7EB7D0215F5666006713B5 /* psych_8.h */,
+				CC7EB7D1215F5666006713B5 /* setup_44p51.h */,
+				CC7EB7D2215F5666006713B5 /* floor_all.h */,
+				CC7EB7D3215F5666006713B5 /* setup_32.h */,
+				CC7EB7D4215F5666006713B5 /* residue_44u.h */,
+				CC7EB7D5215F5666006713B5 /* setup_44.h */,
+				CC7EB7D6215F5666006713B5 /* residue_16.h */,
+				CC7EB7D7215F5666006713B5 /* psych_11.h */,
+				CC7EB7D8215F5666006713B5 /* setup_X.h */,
+			);
+			path = modes;
+			sourceTree = "<group>";
+		};
+		CC7EB7FC215F5668006713B5 /* books */ = {
+			isa = PBXGroup;
+			children = (
+				CC7EB7FD215F5668006713B5 /* uncoupled */,
+				CC7EB802215F5668006713B5 /* coupled */,
+				CC7EB807215F5668006713B5 /* floor */,
+			);
+			path = books;
+			sourceTree = "<group>";
+		};
+		CC7EB7FD215F5668006713B5 /* uncoupled */ = {
+			isa = PBXGroup;
+			children = (
+				CC7EB800215F5668006713B5 /* res_books_uncoupled.h */,
+			);
+			path = uncoupled;
+			sourceTree = "<group>";
+		};
+		CC7EB802215F5668006713B5 /* coupled */ = {
+			isa = PBXGroup;
+			children = (
+				CC7EB803215F5668006713B5 /* res_books_51.h */,
+				CC7EB804215F5668006713B5 /* res_books_stereo.h */,
+			);
+			path = coupled;
+			sourceTree = "<group>";
+		};
+		CC7EB807215F5668006713B5 /* floor */ = {
+			isa = PBXGroup;
+			children = (
+				CC7EB80A215F5668006713B5 /* floor_books.h */,
+			);
+			path = floor;
+			sourceTree = "<group>";
+		};
+		CC8E563E218FD5A500FC2187 /* Complication */ = {
+			isa = PBXGroup;
+			children = (
+				CC8E563F218FD5BC00FC2187 /* ComplicationController.swift */,
+			);
+			path = Complication;
+			sourceTree = "<group>";
+		};
+		CC9E3DD12190009600FCE07C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CC9E3DD2219000A200FCE07C /* Listable.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CC9E3DD421900B8700FCE07C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CC9E3DD92190158400FCE07C /* Privacy.html */,
+				CC9E3DD521900B9600FCE07C /* Acknowledgement.html */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CCBF4EF121869C510063D41A /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				CCBF4EF221869C670063D41A /* SettingsInterfaceController.swift */,
+				CC31AD99218FD135002240A7 /* StorageSettingsInterfaceController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		CCC12449216998A8008EC269 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CCC1244A216998BD008EC269 /* KeychainServices.swift */,
+				CCC1244D216998C6008EC269 /* AudioDecryptor.swift */,
+				CC39F2032179B7790074A20C /* UIImage+Resize.swift */,
+				CC688F0821867D8D006D7277 /* Array+ImageSize.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CCC42D47216AF85F00FBA35A /* Interface Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CCF940AF218F681300F65AAF /* Download */,
+				CCBF4EF121869C510063D41A /* Settings */,
+				CCC42D5F216B230400FBA35A /* Search */,
+				CCC42D4C216B0FDC00FBA35A /* Explore */,
+				CCC42D45216AF85700FBA35A /* InitializationInterfaceController.swift */,
+				CC7A4B59218ED10700BE33B1 /* MessageInterfaceController.swift */,
+				CC2DADD4216ADB7800F5416B /* HomeInterfaceController.swift */,
+				CCC42D48216AFB8A00FBA35A /* PlaylistOverviewInterfaceController.swift */,
+				CC10489C217340E600DBD8F0 /* NowPlayingInterfaceController.swift */,
+			);
+			path = "Interface Controllers";
+			sourceTree = "<group>";
+		};
+		CCC42D4C216B0FDC00FBA35A /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				CCC42D4A216B09E800FBA35A /* ExploreInterfaceController.swift */,
+				CCC42D5B216B1EF100FBA35A /* CategoryInterfaceController.swift */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		CCC42D4D216B11DF00FBA35A /* Row Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CCC42D61216B232600FBA35A /* SearchResultRowController.swift */,
+				CCC42D50216B127000FBA35A /* PlaylistDualItemController.swift */,
+				CCC42D54216B138100FBA35A /* CategoryRowController.swift */,
+				CCF70E49216B2D5400958414 /* AlbumDualItemController.swift */,
+				CCF70E4B216B2E3D00958414 /* HeaderRowController.swift */,
+				CC997DB121799E6400306B52 /* NowPlayingItemController.swift */,
+				CC31AD7F218FBEAF002240A7 /* DownloadTaskRowController.swift */,
+			);
+			path = "Row Controllers";
+			sourceTree = "<group>";
+		};
+		CCC42D56216B14F100FBA35A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CCC42D57216B150500FBA35A /* Array+Chunks.swift */,
+				CCC42D59216B16B700FBA35A /* UIImage+Resize.swift */,
+				CCF70E50216B3B9E00958414 /* Int+ShortText.swift */,
+				CC688F0B2186815C006D7277 /* Array+SpotifyImage.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CCC42D5F216B230400FBA35A /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				CCC42D5D216B22C000FBA35A /* SearchInterfaceController.swift */,
+				CCF940B6218F72CB00F65AAF /* ArtistDetailInterfaceController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		CCCEDEC12161BE6800BB7014 /* Struct */ = {
+			isa = PBXGroup;
+			children = (
+				CC52EF082172BD4B00CA225B /* Playback */,
+				CCF70E43216B256A00958414 /* Search */,
+				CCCEDF062161D93B00BB7014 /* Browse */,
+				CCCEDEF02161D22700BB7014 /* Library */,
+				CCCEDEF12161D23900BB7014 /* User */,
+				CCCEDEF22161D24300BB7014 /* Utils */,
+				CCCEDEF32161D24800BB7014 /* Playlists */,
+			);
+			path = Struct;
+			sourceTree = "<group>";
+		};
+		CCCEDED42161C75400BB7014 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				CCCEDED52161C76800BB7014 /* URLSession+JSONRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		CCCEDEF02161D22700BB7014 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				CCCEDEE42161CEE400BB7014 /* Track.swift */,
+				CCF940B8218F7A7300F65AAF /* SimplifiedTrack.swift */,
+				CCCEDEEA2161D07300BB7014 /* Album+Enum.swift */,
+				CCCEDF002161D7A100BB7014 /* Album.swift */,
+				CCCEDEE72161D04300BB7014 /* SimplifiedAlbum.swift */,
+				CCCEDEED2161D15400BB7014 /* SimplifiedArtist.swift */,
+				CCF70E4D216B32F100958414 /* Artist.swift */,
+				CCCEDF0B2161D9DA00BB7014 /* SavedTrack.swift */,
+				CCCEDF0E2161DA3600BB7014 /* SavedAlbum.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		CCCEDEF12161D23900BB7014 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				CCCEDEC52161C13000BB7014 /* UserSession.swift */,
+				CCCEDEC22161BE7B00BB7014 /* RefreshTokenResponse.swift */,
+				CCCEDECE2161C3DA00BB7014 /* User.swift */,
+				CCCEDEFA2161D2DF00BB7014 /* PublicUser.swift */,
+				CCCEDEFD2161D3B800BB7014 /* Follower.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		CCCEDEF22161D24300BB7014 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CCCEDEC82161C1F000BB7014 /* Result.swift */,
+				CCCEDED12161C43C00BB7014 /* Image.swift */,
+				CCCEDEDB2161C99200BB7014 /* Paginated.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CCCEDEF32161D24800BB7014 /* Playlists */ = {
+			isa = PBXGroup;
+			children = (
+				CC32AB65218E7BB7000BF09D /* AnyPlaylist.swift */,
+				CCCEDEDE2161CA5500BB7014 /* SimplifiedPlaylist.swift */,
+				CCCEDEF42161D26000BB7014 /* Playlist.swift */,
+				CCCEDEF72161D27200BB7014 /* PlaylistTrack.swift */,
+			);
+			path = Playlists;
+			sourceTree = "<group>";
+		};
+		CCCEDF062161D93B00BB7014 /* Browse */ = {
+			isa = PBXGroup;
+			children = (
+				CCCEDF082161D95700BB7014 /* Category.swift */,
+				CCCEDF112161DB9900BB7014 /* CategoriesResponse.swift */,
+				CCCEDF142161DD1600BB7014 /* CategoryPlaylistsResponse.swift */,
+				CCCEDF172161DE4100BB7014 /* FeaturedPlaylistsResponse.swift */,
+				CCCEDF1A2161E02300BB7014 /* NewReleasesResponse.swift */,
+			);
+			path = Browse;
+			sourceTree = "<group>";
+		};
+		CCE124B42161F3EF0012D2AB /* Playback */ = {
+			isa = PBXGroup;
+			children = (
+				CCE124B52161F4080012D2AB /* PlaybackService.swift */,
+				CCE124B82161F50B0012D2AB /* SpotifyAudioTrack.swift */,
+				CCE124C32161F7840012D2AB /* VorbisDecoder.swift */,
+			);
+			path = Playback;
+			sourceTree = "<group>";
+		};
+		CCF70E43216B256A00958414 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				CCF70E44216B258000958414 /* SearchResponse.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		CCF8D76D215B6D47001CDEFD = {
+			isa = PBXGroup;
+			children = (
+				CC3538702186F22700D8358C /* Shared */,
+				CCF8D778215B6D47001CDEFD /* Apollo */,
+				CCF8D78E215B6DCA001CDEFD /* Watch */,
+				CCF8D79D215B6DCA001CDEFD /* Watch Extension */,
+				CC7EB6E5215F281B006713B5 /* AudioKit */,
+				CC7EB703215F2935006713B5 /* SpotifyServices */,
+				CC7EB766215F4EBB006713B5 /* Ogg */,
+				CC7EB799215F5589006713B5 /* Vorbis */,
+				CCF8D777215B6D47001CDEFD /* Products */,
+				CC7EB6F0215F2831006713B5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CCF8D777215B6D47001CDEFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCF8D776215B6D47001CDEFD /* Apollo.app */,
+				CCF8D78D215B6DCA001CDEFD /* Watch.app */,
+				CCF8D799215B6DCA001CDEFD /* Watch Extension.appex */,
+				CC7EB6E4215F281B006713B5 /* AudioKit.framework */,
+				CC7EB702215F2935006713B5 /* SpotifyServices.framework */,
+				CC7EB719215F299F006713B5 /* SpotifyServices.framework */,
+				CC7EB765215F4EBB006713B5 /* Ogg.framework */,
+				CC7EB77C215F4F23006713B5 /* Ogg.framework */,
+				CC7EB798215F5589006713B5 /* Vorbis.framework */,
+				CC7EB7AD215F55D1006713B5 /* Vorbis.framework */,
+				CCE124D9216201B30012D2AB /* AudioKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCF8D778215B6D47001CDEFD /* Apollo */ = {
+			isa = PBXGroup;
+			children = (
+				CCF8D779215B6D47001CDEFD /* AppDelegate.swift */,
+				CC9E3DD12190009600FCE07C /* Utils */,
+				CC7A4B44218EC6FD00BE33B1 /* View */,
+				CC3538682186E79D00D8358C /* Communication */,
+				CC35384D2186DA0000D8358C /* Configuration */,
+				CC35384C2186D9F700D8358C /* View Controllers */,
+				CC9E3DD421900B8700FCE07C /* Resources */,
+				CCF8D780215B6D48001CDEFD /* Assets.xcassets */,
+				CCF8D782215B6D48001CDEFD /* LaunchScreen.storyboard */,
+				CCF8D785215B6D48001CDEFD /* Info.plist */,
+			);
+			path = Apollo;
+			sourceTree = "<group>";
+		};
+		CCF8D78E215B6DCA001CDEFD /* Watch */ = {
+			isa = PBXGroup;
+			children = (
+				CCF8D78F215B6DCA001CDEFD /* Interface.storyboard */,
+				CCF8D792215B6DCA001CDEFD /* Assets.xcassets */,
+				CCF8D794215B6DCA001CDEFD /* Info.plist */,
+			);
+			path = Watch;
+			sourceTree = "<group>";
+		};
+		CCF8D79D215B6DCA001CDEFD /* Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CC8E563E218FD5A500FC2187 /* Complication */,
+				CC3538352186BE4A00D8358C /* App Session */,
+				CCF940B2218F6D5F00F65AAF /* Preferences */,
+				CCC42D4D216B11DF00FBA35A /* Row Controllers */,
+				CCC42D47216AF85F00FBA35A /* Interface Controllers */,
+				CCF8D7A0215B6DCA001CDEFD /* ExtensionDelegate.swift */,
+				CC9339A82172DD3F00DF104C /* SpotifyPlayer.swift */,
+				CCD86F822179890B00CA6FEE /* DebugServices.swift */,
+				CCC42D56216B14F100FBA35A /* Utils */,
+				CCF8D7A2215B6DCA001CDEFD /* Assets.xcassets */,
+				CCF8D7A4215B6DCA001CDEFD /* Info.plist */,
+			);
+			path = "Watch Extension";
+			sourceTree = "<group>";
+		};
+		CCF940AF218F681300F65AAF /* Download */ = {
+			isa = PBXGroup;
+			children = (
+				CCF940B0218F682700F65AAF /* DownloadPlaylistInterfaceController.swift */,
+				CCF940BB218F85A300F65AAF /* DownloadsInterfaceController.swift */,
+			);
+			path = Download;
+			sourceTree = "<group>";
+		};
+		CCF940B2218F6D5F00F65AAF /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				CCF940B3218F6D7200F65AAF /* UserPreferences.swift */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CC7EB6DF215F281B006713B5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC7EB6E8215F281B006713B5 /* AudioKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7EB6FD215F2935006713B5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC7EB706215F2935006713B5 /* SpotifyServices.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7EB711215F299F006713B5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC7EB712215F299F006713B5 /* SpotifyServices.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7EB760215F4EBB006713B5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC7EB78C215F50A3006713B5 /* ogg.h in Headers */,
+				CC7EB789215F4F88006713B5 /* os_types.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7EB774215F4F23006713B5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC7EB78D215F50A3006713B5 /* ogg.h in Headers */,
+				CC7EB78A215F4F88006713B5 /* os_types.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7EB793215F5589006713B5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC7EB879215F5668006713B5 /* codec_internal.h in Headers */,
+				CC7EB86F215F5668006713B5 /* lsp.h in Headers */,
+				CC7EB85D215F5668006713B5 /* lookup_data.h in Headers */,
+				CC7EB825215F5668006713B5 /* setup_44u.h in Headers */,
+				CC7EB819215F5668006713B5 /* mdct.h in Headers */,
+				CC7EB813215F5668006713B5 /* misc.h in Headers */,
+				CC7EB81D215F5668006713B5 /* os.h in Headers */,
+				CC7EB831215F5668006713B5 /* setup_22.h in Headers */,
+				CC7EB857215F5668006713B5 /* highlevel.h in Headers */,
+				CC7EB8A7215F5668006713B5 /* registry.h in Headers */,
+				CC7EB83D215F5668006713B5 /* setup_32.h in Headers */,
+				CC7EB83F215F5668006713B5 /* residue_44u.h in Headers */,
+				CC7EB899215F5668006713B5 /* res_books_stereo.h in Headers */,
+				CC7EB837215F5668006713B5 /* psych_8.h in Headers */,
+				CC7EB82D215F5668006713B5 /* residue_44.h in Headers */,
+				CC7EB893215F5668006713B5 /* res_books_uncoupled.h in Headers */,
+				CC7EB843215F5668006713B5 /* residue_16.h in Headers */,
+				CC7EB81B215F5668006713B5 /* codebook.h in Headers */,
+				CC7EB871215F5668006713B5 /* envelope.h in Headers */,
+				CC7EB8A3215F5668006713B5 /* floor_books.h in Headers */,
+				CC7EB84D215F5668006713B5 /* bitrate.h in Headers */,
+				CC7EB897215F5668006713B5 /* res_books_51.h in Headers */,
+				CC7EB883215F5668006713B5 /* backends.h in Headers */,
+				CC7EB823215F5668006713B5 /* setup_11.h in Headers */,
+				CC7EB889215F5668006713B5 /* scales.h in Headers */,
+				CC7EB7B8215F561E006713B5 /* codec.h in Headers */,
+				CC7EB851215F5668006713B5 /* window.h in Headers */,
+				CC7EB847215F5668006713B5 /* setup_X.h in Headers */,
+				CC7EB82F215F5668006713B5 /* setup_16.h in Headers */,
+				CC7EB83B215F5668006713B5 /* floor_all.h in Headers */,
+				CC7EB845215F5668006713B5 /* psych_11.h in Headers */,
+				CC7EB827215F5668006713B5 /* setup_8.h in Headers */,
+				CC7EB7B6215F561E006713B5 /* vorbisenc.h in Headers */,
+				CC7EB829215F5668006713B5 /* residue_8.h in Headers */,
+				CC7EB865215F5668006713B5 /* lookup.h in Headers */,
+				CC7EB863215F5668006713B5 /* smallft.h in Headers */,
+				CC7EB88D215F5668006713B5 /* psy.h in Headers */,
+				CC7EB877215F5668006713B5 /* lpc.h in Headers */,
+				CC7EB841215F5668006713B5 /* setup_44.h in Headers */,
+				CC7EB881215F5668006713B5 /* masking.h in Headers */,
+				CC7EB821215F5668006713B5 /* psych_44.h in Headers */,
+				CC7EB7B4215F561E006713B5 /* vorbisfile.h in Headers */,
+				CC7EB82B215F5668006713B5 /* residue_44p51.h in Headers */,
+				CC7EB839215F5668006713B5 /* setup_44p51.h in Headers */,
+				CC7EB835215F5668006713B5 /* psych_16.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7EB7A6215F55D1006713B5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC7EB87A215F5668006713B5 /* codec_internal.h in Headers */,
+				CC7EB870215F5668006713B5 /* lsp.h in Headers */,
+				CC7EB85E215F5668006713B5 /* lookup_data.h in Headers */,
+				CC7EB826215F5668006713B5 /* setup_44u.h in Headers */,
+				CC7EB81A215F5668006713B5 /* mdct.h in Headers */,
+				CC7EB814215F5668006713B5 /* misc.h in Headers */,
+				CC7EB81E215F5668006713B5 /* os.h in Headers */,
+				CC7EB832215F5668006713B5 /* setup_22.h in Headers */,
+				CC7EB858215F5668006713B5 /* highlevel.h in Headers */,
+				CC7EB8A8215F5668006713B5 /* registry.h in Headers */,
+				CC7EB83E215F5668006713B5 /* setup_32.h in Headers */,
+				CC7EB840215F5668006713B5 /* residue_44u.h in Headers */,
+				CC7EB89A215F5668006713B5 /* res_books_stereo.h in Headers */,
+				CC7EB838215F5668006713B5 /* psych_8.h in Headers */,
+				CC7EB82E215F5668006713B5 /* residue_44.h in Headers */,
+				CC7EB894215F5668006713B5 /* res_books_uncoupled.h in Headers */,
+				CC7EB844215F5668006713B5 /* residue_16.h in Headers */,
+				CC7EB81C215F5668006713B5 /* codebook.h in Headers */,
+				CC7EB872215F5668006713B5 /* envelope.h in Headers */,
+				CC7EB8A4215F5668006713B5 /* floor_books.h in Headers */,
+				CC7EB84E215F5668006713B5 /* bitrate.h in Headers */,
+				CC7EB898215F5668006713B5 /* res_books_51.h in Headers */,
+				CC7EB884215F5668006713B5 /* backends.h in Headers */,
+				CC7EB824215F5668006713B5 /* setup_11.h in Headers */,
+				CC7EB88A215F5668006713B5 /* scales.h in Headers */,
+				CC7EB7B9215F561E006713B5 /* codec.h in Headers */,
+				CC7EB852215F5668006713B5 /* window.h in Headers */,
+				CC7EB848215F5668006713B5 /* setup_X.h in Headers */,
+				CC7EB830215F5668006713B5 /* setup_16.h in Headers */,
+				CC7EB83C215F5668006713B5 /* floor_all.h in Headers */,
+				CC7EB846215F5668006713B5 /* psych_11.h in Headers */,
+				CC7EB828215F5668006713B5 /* setup_8.h in Headers */,
+				CC7EB7B7215F561E006713B5 /* vorbisenc.h in Headers */,
+				CC7EB82A215F5668006713B5 /* residue_8.h in Headers */,
+				CC7EB866215F5668006713B5 /* lookup.h in Headers */,
+				CC7EB864215F5668006713B5 /* smallft.h in Headers */,
+				CC7EB88E215F5668006713B5 /* psy.h in Headers */,
+				CC7EB878215F5668006713B5 /* lpc.h in Headers */,
+				CC7EB842215F5668006713B5 /* setup_44.h in Headers */,
+				CC7EB882215F5668006713B5 /* masking.h in Headers */,
+				CC7EB822215F5668006713B5 /* psych_44.h in Headers */,
+				CC7EB7B5215F561E006713B5 /* vorbisfile.h in Headers */,
+				CC7EB82C215F5668006713B5 /* residue_44p51.h in Headers */,
+				CC7EB83A215F5668006713B5 /* setup_44p51.h in Headers */,
+				CC7EB836215F5668006713B5 /* psych_16.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCE124C8216201B30012D2AB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCE124C9216201B30012D2AB /* AudioKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CC7EB6E3215F281B006713B5 /* AudioKit iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC7EB6ED215F281B006713B5 /* Build configuration list for PBXNativeTarget "AudioKit iOS" */;
+			buildPhases = (
+				CC7EB6DF215F281B006713B5 /* Headers */,
+				CC7EB6E0215F281B006713B5 /* Sources */,
+				CC7EB6E1215F281B006713B5 /* Frameworks */,
+				CC7EB6E2215F281B006713B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AudioKit iOS";
+			productName = AudioKit;
+			productReference = CC7EB6E4215F281B006713B5 /* AudioKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CC7EB701215F2935006713B5 /* SpotifyServices iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC7EB70B215F2935006713B5 /* Build configuration list for PBXNativeTarget "SpotifyServices iOS" */;
+			buildPhases = (
+				CC7EB6FD215F2935006713B5 /* Headers */,
+				CC7EB6FE215F2935006713B5 /* Sources */,
+				CC7EB6FF215F2935006713B5 /* Frameworks */,
+				CC7EB700215F2935006713B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SpotifyServices iOS";
+			productName = SpotifyServices;
+			productReference = CC7EB702215F2935006713B5 /* SpotifyServices.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CC7EB710215F299F006713B5 /* SpotifyServices watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC7EB716215F299F006713B5 /* Build configuration list for PBXNativeTarget "SpotifyServices watchOS" */;
+			buildPhases = (
+				CC7EB711215F299F006713B5 /* Headers */,
+				CC7EB713215F299F006713B5 /* Sources */,
+				CC7EB714215F299F006713B5 /* Frameworks */,
+				CC7EB715215F299F006713B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SpotifyServices watchOS";
+			productName = SpotifyServices;
+			productReference = CC7EB719215F299F006713B5 /* SpotifyServices.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CC7EB764215F4EBB006713B5 /* Ogg iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC7EB76E215F4EBB006713B5 /* Build configuration list for PBXNativeTarget "Ogg iOS" */;
+			buildPhases = (
+				CC7EB760215F4EBB006713B5 /* Headers */,
+				CC7EB761215F4EBB006713B5 /* Sources */,
+				CC7EB762215F4EBB006713B5 /* Frameworks */,
+				CC7EB763215F4EBB006713B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ogg iOS";
+			productName = Ogg;
+			productReference = CC7EB765215F4EBB006713B5 /* Ogg.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CC7EB773215F4F23006713B5 /* Ogg watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC7EB779215F4F23006713B5 /* Build configuration list for PBXNativeTarget "Ogg watchOS" */;
+			buildPhases = (
+				CC7EB774215F4F23006713B5 /* Headers */,
+				CC7EB776215F4F23006713B5 /* Sources */,
+				CC7EB777215F4F23006713B5 /* Frameworks */,
+				CC7EB778215F4F23006713B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ogg watchOS";
+			productName = Ogg;
+			productReference = CC7EB77C215F4F23006713B5 /* Ogg.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CC7EB797215F5589006713B5 /* Vorbis iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC7EB7A1215F5589006713B5 /* Build configuration list for PBXNativeTarget "Vorbis iOS" */;
+			buildPhases = (
+				CC7EB793215F5589006713B5 /* Headers */,
+				CC7EB794215F5589006713B5 /* Sources */,
+				CC7EB795215F5589006713B5 /* Frameworks */,
+				CC7EB796215F5589006713B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Vorbis iOS";
+			productName = Vorbis;
+			productReference = CC7EB798215F5589006713B5 /* Vorbis.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CC7EB7A5215F55D1006713B5 /* Vorbis watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC7EB7AA215F55D1006713B5 /* Build configuration list for PBXNativeTarget "Vorbis watchOS" */;
+			buildPhases = (
+				CC7EB7A6215F55D1006713B5 /* Headers */,
+				CC7EB7A7215F55D1006713B5 /* Sources */,
+				CC7EB7A8215F55D1006713B5 /* Frameworks */,
+				CC7EB7A9215F55D1006713B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Vorbis watchOS";
+			productName = Vorbis;
+			productReference = CC7EB7AD215F55D1006713B5 /* Vorbis.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CCE124C7216201B30012D2AB /* AudioKit watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCE124D6216201B30012D2AB /* Build configuration list for PBXNativeTarget "AudioKit watchOS" */;
+			buildPhases = (
+				CCE124C8216201B30012D2AB /* Headers */,
+				CCE124CA216201B30012D2AB /* Sources */,
+				CCE124D0216201B30012D2AB /* Frameworks */,
+				CCE124D5216201B30012D2AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AudioKit watchOS";
+			productName = AudioKit;
+			productReference = CCE124D9216201B30012D2AB /* AudioKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CCF8D775215B6D47001CDEFD /* Apollo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCF8D788215B6D48001CDEFD /* Build configuration list for PBXNativeTarget "Apollo" */;
+			buildPhases = (
+				CCF8D772215B6D47001CDEFD /* Sources */,
+				CCF8D773215B6D47001CDEFD /* Frameworks */,
+				CCF8D774215B6D47001CDEFD /* Resources */,
+				CCF8D7AF215B6DCA001CDEFD /* Embed Watch Content */,
+				CC7EB70E215F2935006713B5 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCF8D7A6215B6DCA001CDEFD /* PBXTargetDependency */,
+				CC7EB708215F2935006713B5 /* PBXTargetDependency */,
+				CC7EB76B215F4EBB006713B5 /* PBXTargetDependency */,
+				CC7EB79E215F5589006713B5 /* PBXTargetDependency */,
+				CCE124E42162023C0012D2AB /* PBXTargetDependency */,
+			);
+			name = Apollo;
+			productName = Apollo;
+			productReference = CCF8D776215B6D47001CDEFD /* Apollo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CCF8D78C215B6DCA001CDEFD /* Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCF8D7AC215B6DCA001CDEFD /* Build configuration list for PBXNativeTarget "Watch" */;
+			buildPhases = (
+				CCF8D78B215B6DCA001CDEFD /* Resources */,
+				CCF8D7AB215B6DCA001CDEFD /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCF8D79C215B6DCA001CDEFD /* PBXTargetDependency */,
+			);
+			name = Watch;
+			productName = Watch;
+			productReference = CCF8D78D215B6DCA001CDEFD /* Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		CCF8D798215B6DCA001CDEFD /* Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCF8D7A8215B6DCA001CDEFD /* Build configuration list for PBXNativeTarget "Watch Extension" */;
+			buildPhases = (
+				CCF8D795215B6DCA001CDEFD /* Sources */,
+				CCF8D796215B6DCA001CDEFD /* Frameworks */,
+				CCF8D797215B6DCA001CDEFD /* Resources */,
+				CC7EB6DE215F27E1006713B5 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC7EB71E215F29F7006713B5 /* PBXTargetDependency */,
+				CC7EB791215F51E9006713B5 /* PBXTargetDependency */,
+				CCE124C22161F73E0012D2AB /* PBXTargetDependency */,
+				CCE124E0216202350012D2AB /* PBXTargetDependency */,
+			);
+			name = "Watch Extension";
+			productName = "Watch Extension";
+			productReference = CCF8D799215B6DCA001CDEFD /* Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CCF8D76E215B6D47001CDEFD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = Oltica;
+				TargetAttributes = {
+					CC7EB6E3215F281B006713B5 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					CC7EB701215F2935006713B5 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					CC7EB710215F299F006713B5 = {
+						LastSwiftMigration = 1010;
+					};
+					CC7EB764215F4EBB006713B5 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					CC7EB797215F5589006713B5 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					CCF8D775215B6D47001CDEFD = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					CCF8D78C215B6DCA001CDEFD = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					CCF8D798215B6DCA001CDEFD = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.BackgroundModes.watchos.extension = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = CCF8D771215B6D47001CDEFD /* Build configuration list for PBXProject "Apollo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CCF8D76D215B6D47001CDEFD;
+			productRefGroup = CCF8D777215B6D47001CDEFD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCF8D775215B6D47001CDEFD /* Apollo */,
+				CCF8D78C215B6DCA001CDEFD /* Watch */,
+				CCF8D798215B6DCA001CDEFD /* Watch Extension */,
+				CC7EB6E3215F281B006713B5 /* AudioKit iOS */,
+				CCE124C7216201B30012D2AB /* AudioKit watchOS */,
+				CC7EB701215F2935006713B5 /* SpotifyServices iOS */,
+				CC7EB710215F299F006713B5 /* SpotifyServices watchOS */,
+				CC7EB764215F4EBB006713B5 /* Ogg iOS */,
+				CC7EB773215F4F23006713B5 /* Ogg watchOS */,
+				CC7EB797215F5589006713B5 /* Vorbis iOS */,
+				CC7EB7A5215F55D1006713B5 /* Vorbis watchOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC7EB6E2215F281B006713B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7EB700215F2935006713B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7EB715215F299F006713B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7EB763215F4EBB006713B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7EB778215F4F23006713B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7EB796215F5589006713B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7EB7A9215F55D1006713B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCE124D5216201B30012D2AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCF8D774215B6D47001CDEFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCF8D784215B6D48001CDEFD /* LaunchScreen.storyboard in Resources */,
+				CC9E3DDA2190158500FCE07C /* Privacy.html in Resources */,
+				CC9E3DD621900B9600FCE07C /* Acknowledgement.html in Resources */,
+				CCF8D781215B6D48001CDEFD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCF8D78B215B6DCA001CDEFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCF8D793215B6DCA001CDEFD /* Assets.xcassets in Resources */,
+				CCF8D791215B6DCA001CDEFD /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCF8D797215B6DCA001CDEFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCF8D7A3215B6DCA001CDEFD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC7EB6E0215F281B006713B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC7EB72F215F3DE5006713B5 /* AudioSessionState.swift in Sources */,
+				CC7EB72A215F2BE6006713B5 /* AudioTrackMetadata.swift in Sources */,
+				CC7EB727215F2A74006713B5 /* AudioTrack.swift in Sources */,
+				CC997DAF21798F9600306B52 /* PlaybackState.swift in Sources */,
+				CC997DAC21798EDB00306B52 /* AudioPlayerEventProcessor.swift in Sources */,
+				CC7EB6FB215F28C4006713B5 /* AudioPlayer.swift in Sources */,
+				CC7EB72D215F332B006713B5 /* AudioSessionNotificationHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7EB6FE215F2935006713B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC39FDFB218523EF00FE94C4 /* LocalStorageItem.swift in Sources */,
+				CCCEDEEE2161D15400BB7014 /* SimplifiedArtist.swift in Sources */,
+				CC32AB66218E7BB8000BF09D /* AnyPlaylist.swift in Sources */,
+				CCCEDEFE2161D3B800BB7014 /* Follower.swift in Sources */,
+				CC39FDF8218523CD00FE94C4 /* LocalStorageClass.swift in Sources */,
+				CCCEDED62161C76800BB7014 /* URLSession+JSONRequest.swift in Sources */,
+				CC36C56A21604EEF002DF052 /* Logging.swift in Sources */,
+				CCCEDF0F2161DA3600BB7014 /* SavedAlbum.swift in Sources */,
+				CC39F2042179B7790074A20C /* UIImage+Resize.swift in Sources */,
+				CCCEDEDC2161C99200BB7014 /* Paginated.swift in Sources */,
+				CC39FDF5218523AA00FE94C4 /* LocalStorageManager.swift in Sources */,
+				CCF940B9218F7A7300F65AAF /* SimplifiedTrack.swift in Sources */,
+				CCCEDEF52161D26000BB7014 /* Playlist.swift in Sources */,
+				CC7EB721215F2A1D006713B5 /* SpotifyServiceProvider.swift in Sources */,
+				CCCEDF122161DB9900BB7014 /* CategoriesResponse.swift in Sources */,
+				CCCEDEDF2161CA5500BB7014 /* SimplifiedPlaylist.swift in Sources */,
+				CCC1244B216998BD008EC269 /* KeychainServices.swift in Sources */,
+				CCE124B62161F4080012D2AB /* PlaybackService.swift in Sources */,
+				CC688F0921867D8D006D7277 /* Array+ImageSize.swift in Sources */,
+				CCCEDF182161DE4100BB7014 /* FeaturedPlaylistsResponse.swift in Sources */,
+				CCCEDEBF2161BCDB00BB7014 /* ServiceEndpoint.swift in Sources */,
+				CC3D2FA2218E5748009FCF44 /* DownloadManager.swift in Sources */,
+				CC52EF0D2172C01500CA225B /* FileStorageResolveResponse.swift in Sources */,
+				CCCEDF0C2161D9DA00BB7014 /* SavedTrack.swift in Sources */,
+				CCCEDEC62161C13000BB7014 /* UserSession.swift in Sources */,
+				CC39FDFE2185241F00FE94C4 /* AudioFile.swift in Sources */,
+				CCCEDEF82161D27200BB7014 /* PlaylistTrack.swift in Sources */,
+				CCCEDEFB2161D2DF00BB7014 /* PublicUser.swift in Sources */,
+				CCCEDEE82161D04300BB7014 /* SimplifiedAlbum.swift in Sources */,
+				CCC1244E216998C6008EC269 /* AudioDecryptor.swift in Sources */,
+				CCCEDF1B2161E02300BB7014 /* NewReleasesResponse.swift in Sources */,
+				CCF70E45216B258000958414 /* SearchResponse.swift in Sources */,
+				CCCEDEC92161C1F000BB7014 /* Result.swift in Sources */,
+				CCE124B92161F50B0012D2AB /* SpotifyAudioTrack.swift in Sources */,
+				CCCEDF092161D95700BB7014 /* Category.swift in Sources */,
+				CC3D2F9E218E4F08009FCF44 /* ArtworkService.swift in Sources */,
+				CCCEDECC2161C28C00BB7014 /* SpotifyServiceError.swift in Sources */,
+				CCCEDF152161DD1600BB7014 /* CategoryPlaylistsResponse.swift in Sources */,
+				CCCEDEC32161BE7B00BB7014 /* RefreshTokenResponse.swift in Sources */,
+				CCE124C42161F7840012D2AB /* VorbisDecoder.swift in Sources */,
+				CC52EF0A2172BD5C00CA225B /* TrackFileInfo.swift in Sources */,
+				CCCEDEB92161BA3A00BB7014 /* ServiceConfiguration.swift in Sources */,
+				CCF70E4E216B32F100958414 /* Artist.swift in Sources */,
+				CCCEDEE52161CEE400BB7014 /* Track.swift in Sources */,
+				CCCEDECF2161C3DA00BB7014 /* User.swift in Sources */,
+				CCCEDF012161D7A100BB7014 /* Album.swift in Sources */,
+				CCCEDED22161C43C00BB7014 /* Image.swift in Sources */,
+				CCCEDEEB2161D07300BB7014 /* Album+Enum.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7EB713215F299F006713B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC39FDFC218523EF00FE94C4 /* LocalStorageItem.swift in Sources */,
+				CCCEDEEF2161D15400BB7014 /* SimplifiedArtist.swift in Sources */,
+				CC32AB67218E7BB8000BF09D /* AnyPlaylist.swift in Sources */,
+				CCCEDEFF2161D3B800BB7014 /* Follower.swift in Sources */,
+				CC39FDF9218523CD00FE94C4 /* LocalStorageClass.swift in Sources */,
+				CCCEDED72161C76800BB7014 /* URLSession+JSONRequest.swift in Sources */,
+				CC36C56B21604EEF002DF052 /* Logging.swift in Sources */,
+				CCCEDF102161DA3600BB7014 /* SavedAlbum.swift in Sources */,
+				CC39F2052179B7790074A20C /* UIImage+Resize.swift in Sources */,
+				CCCEDEDD2161C99200BB7014 /* Paginated.swift in Sources */,
+				CC39FDF6218523AA00FE94C4 /* LocalStorageManager.swift in Sources */,
+				CCF940BA218F7A7300F65AAF /* SimplifiedTrack.swift in Sources */,
+				CCCEDEF62161D26000BB7014 /* Playlist.swift in Sources */,
+				CC7EB722215F2A1D006713B5 /* SpotifyServiceProvider.swift in Sources */,
+				CCCEDF132161DB9900BB7014 /* CategoriesResponse.swift in Sources */,
+				CCCEDEE02161CA5500BB7014 /* SimplifiedPlaylist.swift in Sources */,
+				CCC1244C216998BD008EC269 /* KeychainServices.swift in Sources */,
+				CCE124B72161F4080012D2AB /* PlaybackService.swift in Sources */,
+				CC688F0A21867D8D006D7277 /* Array+ImageSize.swift in Sources */,
+				CCCEDF192161DE4100BB7014 /* FeaturedPlaylistsResponse.swift in Sources */,
+				CCCEDEC02161BCDB00BB7014 /* ServiceEndpoint.swift in Sources */,
+				CC3D2FA3218E5748009FCF44 /* DownloadManager.swift in Sources */,
+				CC52EF0E2172C01500CA225B /* FileStorageResolveResponse.swift in Sources */,
+				CCCEDF0D2161D9DA00BB7014 /* SavedTrack.swift in Sources */,
+				CCCEDEC72161C13000BB7014 /* UserSession.swift in Sources */,
+				CC39FDFF2185241F00FE94C4 /* AudioFile.swift in Sources */,
+				CCCEDEF92161D27200BB7014 /* PlaylistTrack.swift in Sources */,
+				CCCEDEFC2161D2DF00BB7014 /* PublicUser.swift in Sources */,
+				CCCEDEE92161D04300BB7014 /* SimplifiedAlbum.swift in Sources */,
+				CCC1244F216998C6008EC269 /* AudioDecryptor.swift in Sources */,
+				CCCEDF1C2161E02300BB7014 /* NewReleasesResponse.swift in Sources */,
+				CCF70E46216B258000958414 /* SearchResponse.swift in Sources */,
+				CCCEDECA2161C1F000BB7014 /* Result.swift in Sources */,
+				CCE124BA2161F50B0012D2AB /* SpotifyAudioTrack.swift in Sources */,
+				CCCEDF0A2161D95700BB7014 /* Category.swift in Sources */,
+				CC3D2F9F218E4F08009FCF44 /* ArtworkService.swift in Sources */,
+				CCCEDECD2161C28C00BB7014 /* SpotifyServiceError.swift in Sources */,
+				CCCEDF162161DD1600BB7014 /* CategoryPlaylistsResponse.swift in Sources */,
+				CCCEDEC42161BE7B00BB7014 /* RefreshTokenResponse.swift in Sources */,
+				CCE124C52161F7840012D2AB /* VorbisDecoder.swift in Sources */,
+				CC52EF0B2172BD5C00CA225B /* TrackFileInfo.swift in Sources */,
+				CCCEDEBA2161BA3A00BB7014 /* ServiceConfiguration.swift in Sources */,
+				CCF70E4F216B32F100958414 /* Artist.swift in Sources */,
+				CCCEDEE62161CEE400BB7014 /* Track.swift in Sources */,
+				CCCEDED02161C3DA00BB7014 /* User.swift in Sources */,
+				CCCEDF022161D7A100BB7014 /* Album.swift in Sources */,
+				CCCEDED32161C43C00BB7014 /* Image.swift in Sources */,
+				CCCEDEEC2161D07300BB7014 /* Album+Enum.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7EB761215F4EBB006713B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC7EB782215F4F6F006713B5 /* framing.c in Sources */,
+				CC7EB780215F4F6F006713B5 /* bitwise.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7EB776215F4F23006713B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC7EB783215F4F6F006713B5 /* framing.c in Sources */,
+				CC7EB781215F4F6F006713B5 /* bitwise.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7EB794215F5589006713B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC7EB88B215F5668006713B5 /* mdct.c in Sources */,
+				CC7EB817215F5668006713B5 /* lpc.c in Sources */,
+				CC7EB80D215F5668006713B5 /* sharedbook.c in Sources */,
+				CC7EB87B215F5668006713B5 /* registry.c in Sources */,
+				CC7EB85F215F5668006713B5 /* block.c in Sources */,
+				CC7EB86B215F5668006713B5 /* lsp.c in Sources */,
+				CC7EB87F215F5668006713B5 /* bitrate.c in Sources */,
+				CC7EB86D215F5668006713B5 /* envelope.c in Sources */,
+				CC7EB887215F5668006713B5 /* res0.c in Sources */,
+				CC7EB87D215F5668006713B5 /* floor0.c in Sources */,
+				CC7EB85B215F5668006713B5 /* codebook.c in Sources */,
+				CC7EB855215F5668006713B5 /* analysis.c in Sources */,
+				CC7EB84F215F5668006713B5 /* window.c in Sources */,
+				CC7EB885215F5668006713B5 /* mapping0.c in Sources */,
+				CC7EB853215F5668006713B5 /* floor1.c in Sources */,
+				CC7EB859215F5668006713B5 /* psy.c in Sources */,
+				CC7EB81F215F5668006713B5 /* lookup.c in Sources */,
+				CC7EB84B215F5668006713B5 /* vorbisfile.c in Sources */,
+				CC7EB869215F5668006713B5 /* vorbisenc.c in Sources */,
+				CC7EB873215F5668006713B5 /* synthesis.c in Sources */,
+				CC7EB80F215F5668006713B5 /* smallft.c in Sources */,
+				CC7EB875215F5668006713B5 /* info.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7EB7A7215F55D1006713B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC7EB856215F5668006713B5 /* analysis.c in Sources */,
+				CC7EB880215F5668006713B5 /* bitrate.c in Sources */,
+				CC7EB860215F5668006713B5 /* block.c in Sources */,
+				CC7EB85C215F5668006713B5 /* codebook.c in Sources */,
+				CC7EB86E215F5668006713B5 /* envelope.c in Sources */,
+				CC7EB87E215F5668006713B5 /* floor0.c in Sources */,
+				CC7EB854215F5668006713B5 /* floor1.c in Sources */,
+				CC7EB876215F5668006713B5 /* info.c in Sources */,
+				CC7EB820215F5668006713B5 /* lookup.c in Sources */,
+				CC7EB818215F5668006713B5 /* lpc.c in Sources */,
+				CC7EB86C215F5668006713B5 /* lsp.c in Sources */,
+				CC7EB886215F5668006713B5 /* mapping0.c in Sources */,
+				CC7EB88C215F5668006713B5 /* mdct.c in Sources */,
+				CC7EB80E215F5668006713B5 /* sharedbook.c in Sources */,
+				CC7EB87C215F5668006713B5 /* registry.c in Sources */,
+				CC7EB888215F5668006713B5 /* res0.c in Sources */,
+				CC7EB850215F5668006713B5 /* window.c in Sources */,
+				CC7EB85A215F5668006713B5 /* psy.c in Sources */,
+				CC7EB810215F5668006713B5 /* smallft.c in Sources */,
+				CC7EB874215F5668006713B5 /* synthesis.c in Sources */,
+				CC7EB86A215F5668006713B5 /* vorbisenc.c in Sources */,
+				CC7EB84C215F5668006713B5 /* vorbisfile.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCE124CA216201B30012D2AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCE124CB216201B30012D2AB /* AudioSessionState.swift in Sources */,
+				CCE124CC216201B30012D2AB /* AudioTrackMetadata.swift in Sources */,
+				CCE124CD216201B30012D2AB /* AudioTrack.swift in Sources */,
+				CC997DB021798F9600306B52 /* PlaybackState.swift in Sources */,
+				CC997DAD21798EDB00306B52 /* AudioPlayerEventProcessor.swift in Sources */,
+				CCE124CE216201B30012D2AB /* AudioPlayer.swift in Sources */,
+				CCE124CF216201B30012D2AB /* AudioSessionNotificationHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCF8D772215B6D47001CDEFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC3538602186E1A200D8358C /* TokenRequestViewController.swift in Sources */,
+				CC35384F2186DA2B00D8358C /* SpotifyAuthorizationContext.swift in Sources */,
+				CC7A4B43218EC30400BE33B1 /* StepViewController.swift in Sources */,
+				CCF8D77A215B6D47001CDEFD /* AppDelegate.swift in Sources */,
+				CC7A4B48218EC74400BE33B1 /* Color.swift in Sources */,
+				CC35386C2186EBD200D8358C /* WatchMessage.swift in Sources */,
+				CC3538642186E27F00D8358C /* BaseNavigationViewController.swift in Sources */,
+				CC35386A2186E7BF00D8358C /* WatchCommunicationManager.swift in Sources */,
+				CC7A4B46218EC70C00BE33B1 /* ActionButton.swift in Sources */,
+				CC9E3DD0218FFFCE00FCE07C /* DetailTableViewCell.swift in Sources */,
+				CC7A4B58218ECC6D00BE33B1 /* SessionLoadingViewController.swift in Sources */,
+				CC7A4B56218ECB4800BE33B1 /* HelloViewController.swift in Sources */,
+				CC35385D2186DFAD00D8358C /* DefaultServiceConfiguration.swift in Sources */,
+				CC35386F2186EFAA00D8358C /* SetupCompleteViewController.swift in Sources */,
+				CC9E3DD821900BE200FCE07C /* WebViewController.swift in Sources */,
+				CC3538722186F2DA00D8358C /* IllegibleViewController.swift in Sources */,
+				CC9E3DD3219000A200FCE07C /* Listable.swift in Sources */,
+				CC35384A2186D97000D8358C /* WelcomeViewController.swift in Sources */,
+				CC3538652186E5B500D8358C /* SpotifyServices.swift in Sources */,
+				CC3538622186E1F500D8358C /* BaseViewController.swift in Sources */,
+				CC35384B2186D98800D8358C /* ConfigurationServices.swift in Sources */,
+				CC9E3DCE218FFDDA00FCE07C /* AboutViewController.swift in Sources */,
+				CC3538672186E6C100D8358C /* TokenSyncViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCF8D795215B6DCA001CDEFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCC42D51216B127000FBA35A /* PlaylistDualItemController.swift in Sources */,
+				CC9339A92172DD3F00DF104C /* SpotifyPlayer.swift in Sources */,
+				CC7A4B5A218ED10700BE33B1 /* MessageInterfaceController.swift in Sources */,
+				CCC42D5E216B22C000FBA35A /* SearchInterfaceController.swift in Sources */,
+				CC997DB221799E6400306B52 /* NowPlayingItemController.swift in Sources */,
+				CCC42D58216B150500FBA35A /* Array+Chunks.swift in Sources */,
+				CCF940B1218F682700F65AAF /* DownloadPlaylistInterfaceController.swift in Sources */,
+				CC35383C2186D30500D8358C /* ConfigurationServices.swift in Sources */,
+				CCD86F832179890B00CA6FEE /* DebugServices.swift in Sources */,
+				CC35383A2186D17600D8358C /* AppSession.swift in Sources */,
+				CC2DADD7216AF6ED00F5416B /* SpotifyServices.swift in Sources */,
+				CC35386D2186EBE400D8358C /* WatchMessage.swift in Sources */,
+				CCC42D5C216B1EF100FBA35A /* CategoryInterfaceController.swift in Sources */,
+				CCF70E4C216B2E3D00958414 /* HeaderRowController.swift in Sources */,
+				CCC42D49216AFB8A00FBA35A /* PlaylistOverviewInterfaceController.swift in Sources */,
+				CCF70E4A216B2D5400958414 /* AlbumDualItemController.swift in Sources */,
+				CC57A332218FEAA800C6223F /* Color.swift in Sources */,
+				CCF940BC218F85A300F65AAF /* DownloadsInterfaceController.swift in Sources */,
+				CCC42D5A216B16B700FBA35A /* UIImage+Resize.swift in Sources */,
+				CCF70E51216B3B9E00958414 /* Int+ShortText.swift in Sources */,
+				CC2DADD5216ADB7800F5416B /* HomeInterfaceController.swift in Sources */,
+				CCF8D7A1215B6DCA001CDEFD /* ExtensionDelegate.swift in Sources */,
+				CC31AD80218FBEAF002240A7 /* DownloadTaskRowController.swift in Sources */,
+				CC688F0C2186815C006D7277 /* Array+SpotifyImage.swift in Sources */,
+				CCF940B7218F72CB00F65AAF /* ArtistDetailInterfaceController.swift in Sources */,
+				CCC42D55216B138100FBA35A /* CategoryRowController.swift in Sources */,
+				CC31AD9A218FD135002240A7 /* StorageSettingsInterfaceController.swift in Sources */,
+				CC3538372186CF0500D8358C /* CompanionCommunicator.swift in Sources */,
+				CCC42D4B216B09E800FBA35A /* ExploreInterfaceController.swift in Sources */,
+				CCF940B4218F6D7200F65AAF /* UserPreferences.swift in Sources */,
+				CC10489D217340E600DBD8F0 /* NowPlayingInterfaceController.swift in Sources */,
+				CCC42D46216AF85700FBA35A /* InitializationInterfaceController.swift in Sources */,
+				CC8E5640218FD5BC00FC2187 /* ComplicationController.swift in Sources */,
+				CCBF4EF321869C670063D41A /* SettingsInterfaceController.swift in Sources */,
+				CCC42D62216B232600FBA35A /* SearchResultRowController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC7EB708215F2935006713B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC7EB701215F2935006713B5 /* SpotifyServices iOS */;
+			targetProxy = CC7EB707215F2935006713B5 /* PBXContainerItemProxy */;
+		};
+		CC7EB71E215F29F7006713B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC7EB710215F299F006713B5 /* SpotifyServices watchOS */;
+			targetProxy = CC7EB71D215F29F7006713B5 /* PBXContainerItemProxy */;
+		};
+		CC7EB76B215F4EBB006713B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC7EB764215F4EBB006713B5 /* Ogg iOS */;
+			targetProxy = CC7EB76A215F4EBB006713B5 /* PBXContainerItemProxy */;
+		};
+		CC7EB791215F51E9006713B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC7EB773215F4F23006713B5 /* Ogg watchOS */;
+			targetProxy = CC7EB790215F51E9006713B5 /* PBXContainerItemProxy */;
+		};
+		CC7EB79E215F5589006713B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC7EB797215F5589006713B5 /* Vorbis iOS */;
+			targetProxy = CC7EB79D215F5589006713B5 /* PBXContainerItemProxy */;
+		};
+		CCE124C22161F73E0012D2AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC7EB7A5215F55D1006713B5 /* Vorbis watchOS */;
+			targetProxy = CCE124C12161F73E0012D2AB /* PBXContainerItemProxy */;
+		};
+		CCE124E0216202350012D2AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCE124C7216201B30012D2AB /* AudioKit watchOS */;
+			targetProxy = CCE124DF216202350012D2AB /* PBXContainerItemProxy */;
+		};
+		CCE124E42162023C0012D2AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC7EB6E3215F281B006713B5 /* AudioKit iOS */;
+			targetProxy = CCE124E32162023C0012D2AB /* PBXContainerItemProxy */;
+		};
+		CCF8D79C215B6DCA001CDEFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCF8D798215B6DCA001CDEFD /* Watch Extension */;
+			targetProxy = CCF8D79B215B6DCA001CDEFD /* PBXContainerItemProxy */;
+		};
+		CCF8D7A6215B6DCA001CDEFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCF8D78C215B6DCA001CDEFD /* Watch */;
+			targetProxy = CCF8D7A5215B6DCA001CDEFD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CCF8D782215B6D48001CDEFD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCF8D783215B6D48001CDEFD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CCF8D78F215B6DCA001CDEFD /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCF8D790215B6DCA001CDEFD /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC7EB6EE215F281B006713B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7C2EXSD3YV;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/AudioKit/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.awas.AudioKit;
+				PRODUCT_NAME = AudioKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CC7EB6EF215F281B006713B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7C2EXSD3YV;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/AudioKit/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.awas.AudioKit;
+				PRODUCT_NAME = AudioKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CC7EB70C215F2935006713B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7C2EXSD3YV;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/SpotifyServices/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.awas.SpotifyServices;
+				PRODUCT_NAME = SpotifyServices;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CC7EB70D215F2935006713B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7C2EXSD3YV;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/SpotifyServices/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.awas.SpotifyServices;
+				PRODUCT_NAME = SpotifyServices;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CC7EB717215F299F006713B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7C2EXSD3YV;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/SpotifyServices/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.awas.SpotifyServices;
+				PRODUCT_NAME = SpotifyServices;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		CC7EB718215F299F006713B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7C2EXSD3YV;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/SpotifyServices/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.awas.SpotifyServices;
+				PRODUCT_NAME = SpotifyServices;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		CC7EB76F215F4EBB006713B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7C2EXSD3YV;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Ogg/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "$(SRCROOT)/Ogg/Supporting Files/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = app.awas.Ogg;
+				PRODUCT_NAME = Ogg;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CC7EB770215F4EBB006713B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7C2EXSD3YV;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Ogg/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "$(SRCROOT)/Ogg/Supporting Files/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = app.awas.Ogg;
+				PRODUCT_NAME = Ogg;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CC7EB77A215F4F23006713B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7C2EXSD3YV;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Ogg/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "$(SRCROOT)/Ogg/Supporting Files/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = app.awas.Ogg;
+				PRODUCT_NAME = Ogg;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		CC7EB77B215F4F23006713B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7C2EXSD3YV;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Ogg/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "$(SRCROOT)/Ogg/Supporting Files/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = app.awas.Ogg;
+				PRODUCT_NAME = Ogg;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		CC7EB7A2215F5589006713B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = NO;
+				CLANG_WARN_BOOL_CONVERSION = NO;
+				CLANG_WARN_COMMA = NO;
+				CLANG_WARN_CONSTANT_CONVERSION = NO;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_EMPTY_BODY = NO;
+				CLANG_WARN_ENUM_CONVERSION = NO;
+				CLANG_WARN_INFINITE_RECURSION = NO;
+				CLANG_WARN_INT_CONVERSION = NO;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = NO;
+				CLANG_WARN_PRAGMA_PACK = NO;
+				CLANG_WARN_STRICT_PROTOTYPES = NO;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = NO;
+				CLANG_WARN_UNREACHABLE_CODE = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7C2EXSD3YV;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/Vorbis/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "$(SRCROOT)/Vorbis/Supporting Files/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = app.awas.Vorbis;
+				PRODUCT_NAME = Vorbis;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CC7EB7A3215F5589006713B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = NO;
+				CLANG_WARN_BOOL_CONVERSION = NO;
+				CLANG_WARN_COMMA = NO;
+				CLANG_WARN_CONSTANT_CONVERSION = NO;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_EMPTY_BODY = NO;
+				CLANG_WARN_ENUM_CONVERSION = NO;
+				CLANG_WARN_INFINITE_RECURSION = NO;
+				CLANG_WARN_INT_CONVERSION = NO;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = NO;
+				CLANG_WARN_PRAGMA_PACK = NO;
+				CLANG_WARN_STRICT_PROTOTYPES = NO;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = NO;
+				CLANG_WARN_UNREACHABLE_CODE = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7C2EXSD3YV;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/Vorbis/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "$(SRCROOT)/Vorbis/Supporting Files/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = app.awas.Vorbis;
+				PRODUCT_NAME = Vorbis;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CC7EB7AB215F55D1006713B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = NO;
+				CLANG_WARN_BOOL_CONVERSION = NO;
+				CLANG_WARN_COMMA = NO;
+				CLANG_WARN_CONSTANT_CONVERSION = NO;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_EMPTY_BODY = NO;
+				CLANG_WARN_ENUM_CONVERSION = NO;
+				CLANG_WARN_INFINITE_RECURSION = NO;
+				CLANG_WARN_INT_CONVERSION = NO;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = NO;
+				CLANG_WARN_PRAGMA_PACK = NO;
+				CLANG_WARN_PRIVATE_MODULE = NO;
+				CLANG_WARN_STRICT_PROTOTYPES = NO;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = NO;
+				CLANG_WARN_UNREACHABLE_CODE = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7C2EXSD3YV;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/Vorbis/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "$(SRCROOT)/Vorbis/Supporting Files/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = app.awas.Vorbis;
+				PRODUCT_NAME = Vorbis;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		CC7EB7AC215F55D1006713B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = NO;
+				CLANG_WARN_BOOL_CONVERSION = NO;
+				CLANG_WARN_COMMA = NO;
+				CLANG_WARN_CONSTANT_CONVERSION = NO;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_EMPTY_BODY = NO;
+				CLANG_WARN_ENUM_CONVERSION = NO;
+				CLANG_WARN_INFINITE_RECURSION = NO;
+				CLANG_WARN_INT_CONVERSION = NO;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = NO;
+				CLANG_WARN_PRAGMA_PACK = NO;
+				CLANG_WARN_PRIVATE_MODULE = NO;
+				CLANG_WARN_STRICT_PROTOTYPES = NO;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = NO;
+				CLANG_WARN_UNREACHABLE_CODE = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7C2EXSD3YV;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/Vorbis/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "$(SRCROOT)/Vorbis/Supporting Files/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = app.awas.Vorbis;
+				PRODUCT_NAME = Vorbis;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		CCE124D7216201B30012D2AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7C2EXSD3YV;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/AudioKit/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.awas.AudioKit;
+				PRODUCT_NAME = AudioKit;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		CCE124D8216201B30012D2AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7C2EXSD3YV;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/AudioKit/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.awas.AudioKit;
+				PRODUCT_NAME = AudioKit;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		CCF8D786215B6D48001CDEFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CCF8D787215B6D48001CDEFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CCF8D789215B6D48001CDEFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7C2EXSD3YV;
+				INFOPLIST_FILE = Apollo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.awas.Apollo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CCF8D78A215B6D48001CDEFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7C2EXSD3YV;
+				INFOPLIST_FILE = Apollo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.awas.Apollo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		CCF8D7A9215B6DCA001CDEFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7C2EXSD3YV;
+				INFOPLIST_FILE = "Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.awas.Apollo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		CCF8D7AA215B6DCA001CDEFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7C2EXSD3YV;
+				INFOPLIST_FILE = "Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.awas.Apollo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		CCF8D7AD215B6DCA001CDEFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7C2EXSD3YV;
+				IBSC_MODULE = Watch_Extension;
+				INFOPLIST_FILE = Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = app.awas.Apollo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		CCF8D7AE215B6DCA001CDEFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7C2EXSD3YV;
+				IBSC_MODULE = Watch_Extension;
+				INFOPLIST_FILE = Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = app.awas.Apollo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC7EB6ED215F281B006713B5 /* Build configuration list for PBXNativeTarget "AudioKit iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC7EB6EE215F281B006713B5 /* Debug */,
+				CC7EB6EF215F281B006713B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC7EB70B215F2935006713B5 /* Build configuration list for PBXNativeTarget "SpotifyServices iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC7EB70C215F2935006713B5 /* Debug */,
+				CC7EB70D215F2935006713B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC7EB716215F299F006713B5 /* Build configuration list for PBXNativeTarget "SpotifyServices watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC7EB717215F299F006713B5 /* Debug */,
+				CC7EB718215F299F006713B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC7EB76E215F4EBB006713B5 /* Build configuration list for PBXNativeTarget "Ogg iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC7EB76F215F4EBB006713B5 /* Debug */,
+				CC7EB770215F4EBB006713B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC7EB779215F4F23006713B5 /* Build configuration list for PBXNativeTarget "Ogg watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC7EB77A215F4F23006713B5 /* Debug */,
+				CC7EB77B215F4F23006713B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC7EB7A1215F5589006713B5 /* Build configuration list for PBXNativeTarget "Vorbis iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC7EB7A2215F5589006713B5 /* Debug */,
+				CC7EB7A3215F5589006713B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC7EB7AA215F55D1006713B5 /* Build configuration list for PBXNativeTarget "Vorbis watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC7EB7AB215F55D1006713B5 /* Debug */,
+				CC7EB7AC215F55D1006713B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCE124D6216201B30012D2AB /* Build configuration list for PBXNativeTarget "AudioKit watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCE124D7216201B30012D2AB /* Debug */,
+				CCE124D8216201B30012D2AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCF8D771215B6D47001CDEFD /* Build configuration list for PBXProject "Apollo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCF8D786215B6D48001CDEFD /* Debug */,
+				CCF8D787215B6D48001CDEFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCF8D788215B6D48001CDEFD /* Build configuration list for PBXNativeTarget "Apollo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCF8D789215B6D48001CDEFD /* Debug */,
+				CCF8D78A215B6D48001CDEFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCF8D7A8215B6DCA001CDEFD /* Build configuration list for PBXNativeTarget "Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCF8D7A9215B6DCA001CDEFD /* Debug */,
+				CCF8D7AA215B6DCA001CDEFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCF8D7AC215B6DCA001CDEFD /* Build configuration list for PBXNativeTarget "Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCF8D7AD215B6DCA001CDEFD /* Debug */,
+				CCF8D7AE215B6DCA001CDEFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CCF8D76E215B6D47001CDEFD /* Project object */;
+}

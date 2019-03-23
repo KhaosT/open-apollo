@@ -1,0 +1,7 @@
+framework module Vorbis [system] {
+  umbrella header "codec.h"
+  header "vorbisfile.h"
+
+  export *
+  module * { export * }
+}
