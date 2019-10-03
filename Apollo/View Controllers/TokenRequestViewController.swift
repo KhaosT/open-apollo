@@ -9,6 +9,7 @@
 import UIKit
 import SpotifyServices
 
+@available(iOS 13.0, *)
 class TokenRequestViewController: BaseViewController {
 
     private let code: String
@@ -41,6 +42,7 @@ class TokenRequestViewController: BaseViewController {
 
 // MARK: - Request Token
 
+@available(iOS 13.0, *)
 extension TokenRequestViewController {
     
     private func requestToken() {
@@ -148,6 +150,7 @@ extension TokenRequestViewController {
 
 // MARK: - Setup
 
+@available(iOS 13.0, *)
 extension TokenRequestViewController {
     
     private func setupView() {

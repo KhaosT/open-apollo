@@ -8,6 +8,7 @@
 
 import UIKit
 
+@available(iOS 13.0, *)
 class TokenSyncViewController: StepViewController {
 
     override func viewDidLoad() {
@@ -29,6 +30,7 @@ class TokenSyncViewController: StepViewController {
 
 // MARK: - Notification
 
+@available(iOS 13.0, *)
 extension TokenSyncViewController {
     
     private func setupNotifications() {
