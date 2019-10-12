@@ -102,6 +102,8 @@ extension WatchCommunicationManager: WCSessionDelegate {
             break
         case .notActivated:
             break
+        @unknown default:
+            break
         }
     }
     

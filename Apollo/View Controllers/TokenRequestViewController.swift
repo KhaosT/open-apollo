@@ -69,7 +69,7 @@ extension TokenRequestViewController {
             }
             
             if let responseObject = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
-                if let refreshToken = responseObject?["refresh_token"] as? String {
+                if let refreshToken = responseObject["refresh_token"] as? String {
                     DispatchQueue.main.async {
                         self?.processRefreshToken(refreshToken)
                     }

@@ -84,7 +84,7 @@ extension WelcomeViewController {
 
 // MARK: - Auth
 
-extension WelcomeViewController {
+extension WelcomeViewController: ASWebAuthenticationPresentationContextProviding {
     
     @objc
     private func didTapGetStartedButton() {
@@ -102,6 +102,12 @@ extension WelcomeViewController {
                         switch error.code {
                         case .canceledLogin:
                             return
+                        case .presentationContextNotProvided:
+                            return
+                        case .presentationContextInvalid:
+                            return
+                        @unknown default:
+                            return
                         }
                     } else {
                         self?.handleAuthorizeFailure(error)
@@ -109,6 +115,9 @@ extension WelcomeViewController {
                 }
             }
         )
+        if #available(iOS 13.0, *) {
+            session.presentationContextProvider = self
+        }
         authenticationSession = session
         
         session.start()
@@ -134,5 +143,9 @@ extension WelcomeViewController {
         
         alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
         present(alert, animated: true, completion: nil)
+    }
+    
+    func presentationAnchor(for session: ASWebAuthenticationSession) -> ASPresentationAnchor {
+        return self.view.window ?? UIApplication.shared.keyWindow!
     }
 }

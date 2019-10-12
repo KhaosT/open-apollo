@@ -35,6 +35,8 @@ extension CompanionCommunicator: WCSessionDelegate {
             break
         case .notActivated:
             break
+        @unknown default:
+            break
         }
     }
     

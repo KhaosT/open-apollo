@@ -1866,14 +1866,14 @@
 				TargetAttributes = {
 					CC7EB6E3215F281B006713B5 = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
 					};
 					CC7EB701215F2935006713B5 = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
 					};
 					CC7EB710215F299F006713B5 = {
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
 					};
 					CC7EB764215F4EBB006713B5 = {
 						CreatedOnToolsVersion = 10.1;
@@ -1881,8 +1881,12 @@
 					CC7EB797215F5589006713B5 = {
 						CreatedOnToolsVersion = 10.1;
 					};
+					CCE124C7216201B30012D2AB = {
+						LastSwiftMigration = 1020;
+					};
 					CCF8D775215B6D47001CDEFD = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1020;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -1894,6 +1898,7 @@
 					};
 					CCF8D798215B6DCA001CDEFD = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1020;
 						SystemCapabilities = {
 							com.apple.BackgroundModes.watchos.extension = {
 								enabled = 1;
@@ -2400,12 +2405,12 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.awas.AudioKit;
+				PRODUCT_BUNDLE_IDENTIFIER = app.awas.AudioKit.iOS;
 				PRODUCT_NAME = AudioKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -2433,11 +2438,11 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.awas.AudioKit;
+				PRODUCT_BUNDLE_IDENTIFIER = app.awas.AudioKit.iOS;
 				PRODUCT_NAME = AudioKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -2465,11 +2470,11 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.awas.SpotifyServices;
+				PRODUCT_BUNDLE_IDENTIFIER = app.awas.SpotifyServices.iOS;
 				PRODUCT_NAME = SpotifyServices;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -2497,10 +2502,10 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.awas.SpotifyServices;
+				PRODUCT_BUNDLE_IDENTIFIER = app.awas.SpotifyServices.iOS;
 				PRODUCT_NAME = SpotifyServices;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -2528,12 +2533,12 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.awas.SpotifyServices;
+				PRODUCT_BUNDLE_IDENTIFIER = app.awas.SpotifyServices.watchOS;
 				PRODUCT_NAME = SpotifyServices;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -2562,11 +2567,11 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.awas.SpotifyServices;
+				PRODUCT_BUNDLE_IDENTIFIER = app.awas.SpotifyServices.watchOS;
 				PRODUCT_NAME = SpotifyServices;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -2595,10 +2600,10 @@
 					"@loader_path/Frameworks",
 				);
 				MODULEMAP_FILE = "$(SRCROOT)/Ogg/Supporting Files/module.modulemap";
-				PRODUCT_BUNDLE_IDENTIFIER = app.awas.Ogg;
+				PRODUCT_BUNDLE_IDENTIFIER = app.awas.Ogg.iOS;
 				PRODUCT_NAME = Ogg;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -2626,10 +2631,10 @@
 					"@loader_path/Frameworks",
 				);
 				MODULEMAP_FILE = "$(SRCROOT)/Ogg/Supporting Files/module.modulemap";
-				PRODUCT_BUNDLE_IDENTIFIER = app.awas.Ogg;
+				PRODUCT_BUNDLE_IDENTIFIER = app.awas.Ogg.iOS;
 				PRODUCT_NAME = Ogg;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -2657,11 +2662,11 @@
 					"@loader_path/Frameworks",
 				);
 				MODULEMAP_FILE = "$(SRCROOT)/Ogg/Supporting Files/module.modulemap";
-				PRODUCT_BUNDLE_IDENTIFIER = app.awas.Ogg;
+				PRODUCT_BUNDLE_IDENTIFIER = app.awas.Ogg.watchOS;
 				PRODUCT_NAME = Ogg;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -2690,11 +2695,11 @@
 					"@loader_path/Frameworks",
 				);
 				MODULEMAP_FILE = "$(SRCROOT)/Ogg/Supporting Files/module.modulemap";
-				PRODUCT_BUNDLE_IDENTIFIER = app.awas.Ogg;
+				PRODUCT_BUNDLE_IDENTIFIER = app.awas.Ogg.watchOS;
 				PRODUCT_NAME = Ogg;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -2748,10 +2753,10 @@
 					"@loader_path/Frameworks",
 				);
 				MODULEMAP_FILE = "$(SRCROOT)/Vorbis/Supporting Files/module.modulemap";
-				PRODUCT_BUNDLE_IDENTIFIER = app.awas.Vorbis;
+				PRODUCT_BUNDLE_IDENTIFIER = app.awas.Vorbis.iOS;
 				PRODUCT_NAME = Vorbis;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -2804,10 +2809,10 @@
 					"@loader_path/Frameworks",
 				);
 				MODULEMAP_FILE = "$(SRCROOT)/Vorbis/Supporting Files/module.modulemap";
-				PRODUCT_BUNDLE_IDENTIFIER = app.awas.Vorbis;
+				PRODUCT_BUNDLE_IDENTIFIER = app.awas.Vorbis.iOS;
 				PRODUCT_NAME = Vorbis;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -2861,11 +2866,11 @@
 					"@loader_path/Frameworks",
 				);
 				MODULEMAP_FILE = "$(SRCROOT)/Vorbis/Supporting Files/module.modulemap";
-				PRODUCT_BUNDLE_IDENTIFIER = app.awas.Vorbis;
+				PRODUCT_BUNDLE_IDENTIFIER = app.awas.Vorbis.watchOS;
 				PRODUCT_NAME = Vorbis;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -2920,11 +2925,11 @@
 					"@loader_path/Frameworks",
 				);
 				MODULEMAP_FILE = "$(SRCROOT)/Vorbis/Supporting Files/module.modulemap";
-				PRODUCT_BUNDLE_IDENTIFIER = app.awas.Vorbis;
+				PRODUCT_BUNDLE_IDENTIFIER = app.awas.Vorbis.watchOS;
 				PRODUCT_NAME = Vorbis;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -2952,12 +2957,12 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.awas.AudioKit;
+				PRODUCT_BUNDLE_IDENTIFIER = app.awas.AudioKit.watchOS;
 				PRODUCT_NAME = AudioKit;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -2985,11 +2990,11 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.awas.AudioKit;
+				PRODUCT_BUNDLE_IDENTIFIER = app.awas.AudioKit.watchOS;
 				PRODUCT_NAME = AudioKit;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -3031,6 +3036,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 18;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -3092,6 +3098,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 18;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -3130,7 +3137,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = app.awas.Apollo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -3152,7 +3159,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = app.awas.Apollo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -3175,7 +3182,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 5.0;
 			};
@@ -3199,7 +3206,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 5.0;
 			};
@@ -3220,7 +3227,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 5.0;
 			};
@@ -3241,7 +3248,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 5.0;
 			};

@@ -88,7 +88,7 @@ extension KeychainServices {
     }
     
     private var deviceKeyAttributes: CFDictionary {
-        let access = SecAccessControlCreateWithFlags(nil, kSecAttrAccessibleAlwaysThisDeviceOnly, .privateKeyUsage, nil)
+        let access = SecAccessControlCreateWithFlags(nil, kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly, .privateKeyUsage, nil)
 
         #if targetEnvironment(simulator)
         let attributes: [CFString : Any] = [

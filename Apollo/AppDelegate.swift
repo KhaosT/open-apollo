@@ -18,6 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         let window = UIWindow(frame: UIScreen.main.bounds)
+        if #available(iOS 13.0, *) {
+            window.overrideUserInterfaceStyle = .dark
+        }
         window.tintColor = Color.green
         
         if let currentConfiguration = ConfigurationServices.shared.currentConfiguration {

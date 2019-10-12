@@ -107,6 +107,8 @@ extension PlaybackService {
         case .canceling,
              .completed:
             break
+        @unknown default:
+            break
         }
         
         operationQueue.async {

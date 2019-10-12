@@ -52,13 +52,6 @@ class HomeInterfaceController: WKInterfaceController {
             object: DownloadManager.shared
         )
         
-        nowPlayingItemController = NowPlayingItemController(
-            itemGroup: nowPlayingItemGroup,
-            animationView: nowPlayingAnimationView,
-            imageView: nowPlayingImageView,
-            nameLabel: nowPlayingNameLabel
-        )
-        
         updateMenuItems()
     }
     
@@ -68,6 +61,16 @@ class HomeInterfaceController: WKInterfaceController {
     
     override func willActivate() {
         super.willActivate()
+        
+        if nowPlayingItemController == nil {
+            nowPlayingItemController = NowPlayingItemController(
+                itemGroup: nowPlayingItemGroup,
+                animationView: nowPlayingAnimationView,
+                imageView: nowPlayingImageView,
+                nameLabel: nowPlayingNameLabel
+            )
+        }
+        
         SpotifyPlayer.shared.registerPlayerEventProcessor(nowPlayingItemController!)
         updateIfNecessary()
     }

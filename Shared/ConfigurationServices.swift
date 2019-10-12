@@ -92,7 +92,7 @@ extension ConfigurationServices {
             SecItemUpdate(
                 query as CFDictionary,
                 [
-                    kSecAttrAccessible as String: kSecAttrAccessibleAlways,
+                    kSecAttrAccessible as String: kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly,
                     kSecValueData as String: data
                 ] as CFDictionary
             )
@@ -100,7 +100,7 @@ extension ConfigurationServices {
             let addQuery: [String: Any] = [
                 kSecClass as String: kSecClassGenericPassword,
                 kSecAttrAccount as String: Constants.appConfigurationKey,
-                kSecAttrAccessible as String: kSecAttrAccessibleAlways,
+                kSecAttrAccessible as String: kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly,
                 kSecValueData as String: data
             ]
             

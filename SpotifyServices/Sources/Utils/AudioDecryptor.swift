@@ -43,8 +43,8 @@ class AudioDecryptor {
         let buffer = UnsafeMutableRawPointer.allocate(byteCount: data.count, alignment: 0)
         var outputSize = 0
         
-        try data.withUnsafeBytes { (ptr: UnsafePointer<UInt8>) -> Void in
-            let ret = CCCryptorUpdate(self.cryptor, ptr, data.count, buffer, data.count, &outputSize)
+        try data.withUnsafeBytes { ptr -> Void in
+            let ret = CCCryptorUpdate(self.cryptor, ptr.baseAddress, ptr.count, buffer, ptr.count, &outputSize)
             guard ret == kCCSuccess else {
                 throw AudioDecryptor.Error.internalError(Int(ret))
             }

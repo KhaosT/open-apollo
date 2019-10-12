@@ -71,6 +71,8 @@ extension AudioSessionNotificationHandler {
                 let options = AVAudioSession.InterruptionOptions(rawValue: optionsValue)
                 interruptionEndedHandler?(options)
             }
+        @unknown default:
+            break
         }
     }
     

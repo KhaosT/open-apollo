@@ -48,6 +48,8 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
             optionalTemplate = graphicCircularComplication()
         case .graphicRectangular:
             optionalTemplate = graphicRectangularComplication()
+        @unknown default:
+            break
         }
         
         guard let template = optionalTemplate else {
