@@ -42,8 +42,8 @@ class HomeInterfaceController: WKInterfaceController {
         "Sigur Rós"
     ]
     
-    override func awake(withContext context: Any?) {
-        super.awake(withContext: context)
+    override func willActivate() {
+        super.willActivate()
         
         NotificationCenter.default.addObserver(
             self,
@@ -52,16 +52,6 @@ class HomeInterfaceController: WKInterfaceController {
             object: DownloadManager.shared
         )
         
-        updateMenuItems()
-    }
-    
-    deinit {
-        NotificationCenter.default.removeObserver(self)
-    }
-    
-    override func willActivate() {
-        super.willActivate()
-        
         if nowPlayingItemController == nil {
             nowPlayingItemController = NowPlayingItemController(
                 itemGroup: nowPlayingItemGroup,
@@ -69,6 +59,8 @@ class HomeInterfaceController: WKInterfaceController {
                 imageView: nowPlayingImageView,
                 nameLabel: nowPlayingNameLabel
             )
+            
+            updateMenuItems()
         }
         
         SpotifyPlayer.shared.registerPlayerEventProcessor(nowPlayingItemController!)
@@ -77,6 +69,13 @@ class HomeInterfaceController: WKInterfaceController {
     
     override func didDeactivate() {
         super.didDeactivate()
+        
+        NotificationCenter.default.removeObserver(
+            self,
+            name: .downloadManagerTaskChanges,
+            object: DownloadManager.shared
+        )
+        
         SpotifyPlayer.shared.unregisterPlayerEventProcessor(nowPlayingItemController!)
     }
     
