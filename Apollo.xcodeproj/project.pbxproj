@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		CC10489D217340E600DBD8F0 /* NowPlayingInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC10489C217340E600DBD8F0 /* NowPlayingInterfaceController.swift */; };
+		CC2330D32517FF4200F13316 /* Ogg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7EB77C215F4F23006713B5 /* Ogg.framework */; };
+		CC2330D42517FF4200F13316 /* Ogg.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC7EB77C215F4F23006713B5 /* Ogg.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CC2DADD5216ADB7800F5416B /* HomeInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2DADD4216ADB7800F5416B /* HomeInterfaceController.swift */; };
 		CC2DADD7216AF6ED00F5416B /* SpotifyServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2DADD6216AF6ED00F5416B /* SpotifyServices.swift */; };
 		CC31AD80218FBEAF002240A7 /* DownloadTaskRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC31AD7F218FBEAF002240A7 /* DownloadTaskRowController.swift */; };
@@ -317,7 +319,6 @@
 		CCE124B92161F50B0012D2AB /* SpotifyAudioTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE124B82161F50B0012D2AB /* SpotifyAudioTrack.swift */; };
 		CCE124BA2161F50B0012D2AB /* SpotifyAudioTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE124B82161F50B0012D2AB /* SpotifyAudioTrack.swift */; };
 		CCE124BB2161F7230012D2AB /* Ogg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7EB765215F4EBB006713B5 /* Ogg.framework */; };
-		CCE124BC2161F7270012D2AB /* Ogg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7EB765215F4EBB006713B5 /* Ogg.framework */; };
 		CCE124BD2161F72C0012D2AB /* Vorbis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7EB798215F5589006713B5 /* Vorbis.framework */; };
 		CCE124BE2161F7300012D2AB /* Vorbis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7EB7AD215F55D1006713B5 /* Vorbis.framework */; };
 		CCE124BF2161F73E0012D2AB /* Vorbis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7EB7AD215F55D1006713B5 /* Vorbis.framework */; };
@@ -365,6 +366,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		CC2330D52517FF4200F13316 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCF8D76E215B6D47001CDEFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC7EB773215F4F23006713B5;
+			remoteInfo = "Ogg watchOS";
+		};
 		CC7EB707215F2935006713B5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CCF8D76E215B6D47001CDEFD /* Project object */;
@@ -438,6 +446,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		CC2330D72517FF4200F13316 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CC2330D42517FF4200F13316 /* Ogg.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CC7EB6DE215F27E1006713B5 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -732,9 +751,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC2330D32517FF4200F13316 /* Ogg.framework in Frameworks */,
 				CCE124DC2162022A0012D2AB /* AudioKit.framework in Frameworks */,
 				CCE124BE2161F7300012D2AB /* Vorbis.framework in Frameworks */,
-				CCE124BC2161F7270012D2AB /* Ogg.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1691,10 +1710,12 @@
 				CC7EB713215F299F006713B5 /* Sources */,
 				CC7EB714215F299F006713B5 /* Frameworks */,
 				CC7EB715215F299F006713B5 /* Resources */,
+				CC2330D72517FF4200F13316 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CC2330D62517FF4200F13316 /* PBXTargetDependency */,
 			);
 			name = "SpotifyServices watchOS";
 			productName = SpotifyServices;
@@ -2312,6 +2333,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		CC2330D62517FF4200F13316 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC7EB773215F4F23006713B5 /* Ogg watchOS */;
+			targetProxy = CC2330D52517FF4200F13316 /* PBXContainerItemProxy */;
+		};
 		CC7EB708215F2935006713B5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CC7EB701215F2935006713B5 /* SpotifyServices iOS */;

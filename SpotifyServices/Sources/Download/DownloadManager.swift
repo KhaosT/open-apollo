@@ -11,10 +11,8 @@ import Foundation
 public class DownloadManager: NSObject {
     
     private lazy var urlSession: URLSession = {
-        let configuration = URLSessionConfiguration.background(withIdentifier: "app.awas.Spotify.download")
-        configuration.sessionSendsLaunchEvents = true
-        configuration.isDiscretionary = false
-        configuration.allowsCellularAccess = false
+        let configuration = URLSessionConfiguration.ephemeral
+        configuration.allowsCellularAccess = true
         configuration.waitsForConnectivity = true
         
         let urlSession = URLSession(configuration: configuration, delegate: self, delegateQueue: nil)
